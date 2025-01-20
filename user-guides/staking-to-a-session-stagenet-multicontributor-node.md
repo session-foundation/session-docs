@@ -18,17 +18,13 @@ Navigate to the [Staking Portal](https://stake.getsession.org/) and connect your
 
 Navigate to the [Stake Now](https://stake.getsession.org/stake) page to view the list of nodes awaiting contribution (Open Session Nodes)
 
-<figure><img src="../.gitbook/assets/Stake1.png" alt=""><figcaption></figcaption></figure>
-
 The listed nodes will show the minimum and maximum contribution amounts, as well as the operator fee.&#x20;
 
 #### Step 3:&#x20;
 
 Once you have selected a node to stake to, hit **View** to examine the node details.
 
-<figure><img src="../.gitbook/assets/Stake2.png" alt=""><figcaption></figcaption></figure>
-
-From this menu you can enter the amount of test SESH you wish to stake, and then hit the green button which reads 'Stake 𝑥 SESH to Multicontributor Node'
+From this menu you can enter the amount of test SESH you wish to stake, and then hit the green button which reads 'Stake (Amount) SESH to Multicontributor Node'
 
 #### Step 4:
 
