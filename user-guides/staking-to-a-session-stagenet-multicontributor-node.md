@@ -29,3 +29,12 @@ From this menu you can enter the amount of test SESH you wish to stake, and then
 #### Step 4:
 
 Your stake will be contributed to the node and once the total amount staked has reached 20,000 it will be registered on the network and you will begin earning rewards.
+
+### Unlocking your stake
+
+If you're contributing a stake to a node, you can also request to unlock your stake under certain conditions. \
+\
+**Small contributors** (those contributing less than 1/4 of a full stake) cannot initiate a unlock during the first 30 days a node operates, but can do so at any time after this initial 30-day period. As above, the unlock period is 2 days (15 days on mainnet), after which the stake can be reclaimed. \
+\
+**Large contributors** (those contributing 1/4 of a full stake or more) can initiate an unlock at any time, including within the first 30 days of a node’s operation. As above, the unlock period is 2 days (15 days on mainnet), after which the stake can be reclaimed.
+
