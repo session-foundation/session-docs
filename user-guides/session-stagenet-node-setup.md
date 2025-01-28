@@ -428,13 +428,24 @@ systemctl restart oxen-stagenet-node
 
 Stagenet Session Nodes will continually earn test SESH rewards indefinitely until an exit is requested or the node becomes deregistered. To request an exit to reclaim your test SESH stake, simply open the [Staking Portal](https://stake.getsession.org/) and navigate to the [My Stakes](https://stake.getsession.org/mystakes) page. You can then click Request Exit for any stake you wish to initiate an unlock for.
 
-The stagenet Session Node will become eligible to exit 1 day after the initial request. After exiting the test SESH reward will be claimable from your unclaimed tokens balance.
+Your stagenet Session Node will become eligible to exit 1 day after the initial request (and after 15 days on mainnet).
 
-Deregistrations can be issued at any point during the active lifecycle of a stagenet Session Node, including during the period after requesting an unlock. Deregistration removes your stagenet Session Node from the network, and your stake(s) become locked and unspendable for 2 days from the block in which the stagenet Session Node was deregistered.
+When a stagenet Session Node has become eligible to exit (after 1 day has elapsed after an exit request), the node must formally exit the network within 2 hours of becoming eligible (or within 15 days after becoming eligible to exit on mainnet). Simply click the Exit button on the node in the Staking Portal. After exiting, you can claim your stake by clicking the Claim button on your My Stakes page.
 
-Receiving a deregistration **after** participant(s) have already requested an unlock overrides the 1 day stake unlock time, and sets the unlock time to 2 days.
+If the node is not removed within 2 hours becoming eligible to exit (or 7 days after becoming eligible on mainnet, 22 days after the initial exit request), the node becomes eligible for liquidation by other users. When a node gets liquidated, a 0.2% penalty is taken from the operator's stake: 0.1% of the operator’s stake is transferred to the liquidator, and 0.1% of the operator’s stake is returned to the Staking Reward Pool.\
 
-When a stagenet Session Node has become eligible to exit (after 1 day has elapsed for an exit request, after 2 days has elapsed for a deregistration), the node must formally exit the network within 2 hours of becoming eligible by clicking the Exit button on their node from the Staking Portal. If the node is not removed within 2 hours, the node becomes eligible for liquidation by other users which takes a 0.2% fee from the operator's stake.
+
+### Deregistrations
+
+Deregistrations can be issued at any point during the active lifecycle of a stagenet Session Node, including during the period after requesting an exit.
+
+Deregistration removes your stagenet Session Node from the network, and your stake(s) become locked and unspendable for 2 days (30 days on mainnet) from the block in which the stagenet Session Node was deregistered. After this period, operator and contributors can retrieve their stakes by clicking the Claim button in the Staking Portal.
+
+Receiving a deregistration **after** the node's participant(s) have already submitted an exit request overrides the 1 day stake unlock time (15 days on mainnet), and sets the unlock time to 2 days (30 days on mainnet).
+
+There are currently bugs affecting deregistrations, and development work is underway to optimise this process. Once finalized, this is how liquidations will work in the case of a deregistration:
+
+To avoid losing 0.2% of their stake to the liquidation penalty, operators can manually exit their node by clicking the Exit button in the Staking Portal. The stake will still remain locked for 30 days. If the node has not been manually exited within 2 hours following deregistration (7 days on mainnet), it is eligible for liquidation.
 
 Running a stagenet Session Node during will be more challenging than running an Oxen Service Node and deregistrations may be more likely. Please stay up to date with changes and ongoing development via [Discord](https://discord.com/invite/Xj3HpbWxbA).
 
