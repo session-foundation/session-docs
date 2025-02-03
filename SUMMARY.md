@@ -26,6 +26,7 @@
   * [🧪 Session Stagenet Node Setup](user-guides/session-stagenet-node-setup.md)
   * [Staking to a Session Stagenet Multicontributor Node](user-guides/staking-to-a-session-stagenet-multicontributor-node.md)
   * [❓ Frequently Asked Questions (FAQ)](user-guides/frequently-asked-questions-faq.md)
+  * [🗂️ How to view SESH in your Wallet](user-guides/how-to-view-sesh-in-your-wallet.md)
 * [Twitter / X](https://twitter.com/session_token)
 * [Discord](https://discord.gg/pVYQvcSVrW)
 * [Session Token Website](https://token.getsession.org)
