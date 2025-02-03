@@ -1,3 +1,7 @@
+---
+description: Learn how to make SESH show up in your Ethereum wallet.
+---
+
 # 🗂️ How to view SESH in your Wallet
 
 When you receive test SESH tokens, you may notice they don’t automatically appear in your Ethereum wallet. This is because wallets don’t automatically display all tokens—they only show tokens you’ve specifically added. To view your test SESH tokens, you’ll need to manually import the token by adding its contract address to your wallet.
