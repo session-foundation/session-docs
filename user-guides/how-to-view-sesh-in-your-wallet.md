@@ -23,7 +23,7 @@ Here are links to step-by-step guides to help you add test SESH to the most popu
 You will be prompted to enter the below details:\
 **Token Contract Address:** 0x7D7fD4E91834A96cD9Fb2369E7f4EB72383bbdEd\
 **Token Symbol:** SESH\
-**Token Decimal:** 18
+**Token Decimal:** 9
 
 You should also make sure you’re on the correct chain before you get started. For testnet, this is Arbitrum Sepolia.&#x20;
 
