@@ -18,7 +18,7 @@ Yes, if you run a multicontributor node, you are required to stake at least 5000
 
 Operators can set an operator fee on their multicontributor nodes, which is collected in Session Tokens. This fee helps operators to cover the costs of running a node. The fee is taken as a percentage of the node rewards allocated to the operator. Once the fee is deducted, the remaining rewards are distributed among all contributors (including the operator), proportional to stake amount.\
 \
-For example: If a node earns 1000 Session Tokens and the operator sets a 10% fee, the operator keeps 100 tokens as their fee, and the remaining 900 tokens are split based on stake amounts—so, if the operator staked 50%, they’d get 450 tokens, and two contributors with 25% stakes each would get 225 tokens each.
+For example: If a node earns 1000 Session Tokens and the operator sets a 10% fee, the operator keeps 100 tokens as their fee, and the remaining 900 tokens are split based on stake amounts—so, if the operator staked 50%, they’d get 450 tokens (550 in total), and two contributors with 25% stakes each would get 225 tokens each.
 
 ## How do staking rewards and operator fees get sent to my wallet address?
 
