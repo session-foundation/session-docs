@@ -1,4 +1,4 @@
-# 🪙 Tokenomics
+# 📊 Tokenomics
 
 The maximum supply of Session Token is 240,000,000. At token genesis, the **circulating supply will be a maximum of 80,000,000 Session Tokens**.
 

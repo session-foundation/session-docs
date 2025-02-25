@@ -2,7 +2,7 @@
 
 * [👋 Intro to Session Token](README.md)
   * [⭐ Getting started with Session Token](intro-to-session-token/getting-started-with-session-token.md)
-* [🪙 Tokenomics](tokenomics/README.md)
+* [📊 Tokenomics](tokenomics/README.md)
   * [Genesis tokenomics](tokenomics/genesis-tokenomics/README.md)
     * [Oxen Coin Claims](tokenomics/genesis-tokenomics/oxen-coin-claims.md)
     * [Service Node Bonus](tokenomics/genesis-tokenomics/service-node-bonus.md)
