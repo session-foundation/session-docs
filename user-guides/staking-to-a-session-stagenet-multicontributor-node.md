@@ -8,7 +8,7 @@ icon: users-medical
 
 Session Stagenet Nodes can be run by a single contributor, or by multiple contributors who pool their test SESH to meet the staking requirement of 20,000. This guide covers how to stake to a multi-contributor node which is awaiting contribution.&#x20;
 
-If you wish instead to register a node, you can find out how to do that [here](session-stagenet-node-setup.md).
+If you wish instead to register a node, you can find out how to do that [here](session-stagenet-node-setup/).
 
 #### Step 1:
 

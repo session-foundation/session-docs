@@ -104,7 +104,7 @@ If you check the logs during startup, you should see some messages such as:
 
 indicating that it has successfully subscribes to L2 updates from the proxy.
 
-## All Done!
+## All done!
 
 If you want to add new nodes in the future that use your proxies, all you need to do is add their pubkeys into your /etc/oxen/proxy.txt files on the proxies, and add the `l2-oxend=...` lines into the proxy-using oxend configs and restart the proxy-using oxends. (The proxy nodes themselves do _not_ need to be restarted to pick up the proxy.txt changes).
 
