@@ -29,6 +29,7 @@
   * [☺️ For Beginners](user-guides/for-beginners/README.md)
     * [👛 How to create a crypto wallet](user-guides/for-beginners/how-to-create-a-crypto-wallet.md)
     * [🗂️ How to view SESH in your Wallet](user-guides/how-to-view-sesh-in-your-wallet.md)
+  * [🔀 How to set up an oxend L2 proxy](user-guides/how-to-set-up-an-oxend-l2-proxy.md)
 * [Twitter / X](https://twitter.com/session_token)
 * [Discord](https://discord.gg/pVYQvcSVrW)
 * [Session Token Website](https://token.getsession.org)
