@@ -1,6 +1,6 @@
 # 🔀 How to set up an oxend L2 proxy
 
-With the 11.1.2 mainnet release and 11.0.8 stagenet release, a new capability for oxend has been added to proxy requests to an L2 provider. This feature is aimed in particular at people running multiple nodes.
+With the 11.1.2 Oxen mainnet release and 11.0.8 Session stagenet (testnet) release, a new capability for oxend has been added to proxy requests to an L2 provider. This feature is aimed in particular at people running multiple nodes.
 
 This feature works by having only 2-3 of your nodes configured with an L2 provider URL, and having all the others configured to talk to those 2-3 nodes to get Arbitrum updates, without having to use multiple or paid tier accounts for your set of nodes.
 
