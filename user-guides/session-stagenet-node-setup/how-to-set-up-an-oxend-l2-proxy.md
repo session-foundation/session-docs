@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # 🔀 How to set up an oxend L2 proxy
 
 With the 11.1.2 Oxen mainnet release and 11.0.8 Session stagenet (testnet) release, a new capability for oxend has been added to proxy requests to an L2 provider. This feature is aimed in particular at people running multiple nodes.
