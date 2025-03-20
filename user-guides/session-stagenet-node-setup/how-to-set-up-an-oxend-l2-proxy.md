@@ -16,7 +16,7 @@ On each of these proxies, you will need to edit the /etc/oxen/oxen.conf configur
 
 There are a couple of config items you'll need to add to the `oxen.conf` file: one or more `l2-provider` lines specifying how the proxies themselves fetch Arbitrum data, and an `l2-proxy=FILENAME` option that specifies a file containing the pubkey of other nodes allowed to use your node as a proxy.\
 \
-You'll edit the file (e.g. with `nano /etc/node/oxen.conf`) and add some lines like this:
+You'll edit the file (e.g. with `nano /etc/oxen/oxen.conf`) and add some lines like this:
 
 ```
 l2-provider=https://first.provider.url/abc
