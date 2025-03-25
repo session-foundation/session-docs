@@ -219,7 +219,7 @@ oxend-stagenet print_sn_status
 To see the output log of your node you can run the following command:
 
 ```
-journalctl -u oxen-stagenet-node
+journalctl -u oxen-stagenet-node -f
 ```
 
 This is useful to see if your node is syncing with the blockchain and to see other diagnostic messages that may come up from time to time. (Press `Ctrl-C` to stop watching the log).
