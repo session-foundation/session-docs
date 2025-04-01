@@ -2,7 +2,7 @@
 
 Localisation will be taking place using Crowdin, a community-driven translation platform. You’ll need to [register a free Crowdin](https://accounts.crowdin.com/register) account to participate.
 
-After you’ve registered an account, you can [find the Crowdin page for Session here](https://crowdin.com/project/session-crossplatform-strings).
+After you’ve registered an account, you can [find the Crowdin page for Session here](https://getsession.org/translate).
 
 From the dashboard you can search for the language you wish to help translate:
 
