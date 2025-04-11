@@ -6,7 +6,7 @@ description: A total of 80,000,000 Session Tokens will be circulating at TGE
 
 <figure><img src="../../.gitbook/assets/TGE supply.webp" alt=""><figcaption></figcaption></figure>
 
-Although Session Token has a maximum supply of 240,000,000, a **maximum of&#x20;**<mark style="background-color:green;">**80 million**</mark>**&#x20;Session Tokens unlocked at TGE.**
+Although Session Token has a maximum supply of 240,000,000, a **maximum of&#x20;**<mark style="background-color:green;">**80 million**</mark>**&#x20;Session Tokens are unlocked at TGE.**
 
 * 6 million for Project Treasury (7.5% TGE supply)
 * 14 million for the Ecosystem and Community Fund (17.5% TGE supply)
