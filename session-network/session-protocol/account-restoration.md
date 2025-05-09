@@ -10,8 +10,6 @@ Example of a Recovery Password on Session messenger: _virtual rounded dating its
 
 A user may use their Recovery Password to recover their account if their device is lost or destroyed. This enables the user’s contacts to keep communicating with the same Account ID, instead of needing to establish contact with a new Account ID.
 
-Never share your Recover Password with anyone. Make sure to store it in a safe and secure place.
-
 {% hint style="danger" %}
-**Never share your Recover Password with anyone**. Make sure to store it in a safe and secure place.
+**Never share your Recovery Password with anyone**. Make sure to store it in a safe and secure place.
 {% endhint %}

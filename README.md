@@ -18,7 +18,7 @@ layout:
     visible: true
 ---
 
-# Session messenger
+# Session Messenger
 
 Session is a cross-platform, end-to-end encrypted messaging app designed to provide secure, private, and anonymous communication.
 
@@ -42,9 +42,9 @@ Session is the result of years of open-source development and the dedication of 
 
 ### Get started
 
-| [Installing Session](session-messenger/installing-session/) | [Learn about Session Token (SESH)](session-token-sesh/)             |
-| ----------------------------------------------------------- | ------------------------------------------------------------------- |
-| [How the Session Network works](session-network/)           | [Contributing to Session](session-messenger/contribute-to-session/) |
+| [Installing Session](session-messenger/installing-session/) | [Learn about Session Token (SESH)](session-token-sesh/)                       |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| [How the Session Network works](session-network/)           | [Contributing to Session](session-messenger/contribute-to-session-messenger/) |
 
 ### More Resources  <a href="#docs-internal-guid-bcbb5807-7fff-e6fb-acf3-ebb3a61fbfd2" id="docs-internal-guid-bcbb5807-7fff-e6fb-acf3-ebb3a61fbfd2"></a>
 
