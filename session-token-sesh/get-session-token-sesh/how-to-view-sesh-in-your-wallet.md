@@ -4,7 +4,7 @@ description: Learn how to make SESH show up in your Ethereum wallet.
 
 # How to view SESH in your Wallet
 
-When you receive test SESH tokens, you may notice they don’t automatically appear in your Ethereum wallet. This is because wallets don’t automatically display all tokens—they only show tokens you’ve specifically added. To view your test SESH tokens, you’ll need to manually import the token by adding its contract address to your wallet.
+When you receive SESH tokens, you may notice they don’t automatically appear in your Ethereum wallet. This is because wallets don’t automatically display all tokens—they only show tokens you’ve specifically added. To view your test SESH tokens, you’ll need to manually import the token by adding its contract address to your wallet.
 
 ### What does it mean to import a contract address?
 
@@ -21,11 +21,11 @@ Here are links to step-by-step guides to help you add test SESH to the most popu
 [How to import tokens into your MyEtherWallet](https://help.myetherwallet.com/en/articles/5974186-custom-tokens-on-mew)
 
 You will be prompted to enter the below details:\
-**Token Contract Address:** 0x7D7fD4E91834A96cD9Fb2369E7f4EB72383bbdEd\
+**Token Contract Address:** \[TBD]\
 **Token Symbol:** SESH\
 **Token Decimal:** 9
 
-You should also make sure you’re on the correct chain before you get started. For testnet, this is Arbitrum Sepolia.&#x20;
+You should also make sure you’re on the Arbitrum network in your wallet before you get started.
 
 ### Why don’t tokens show up automatically in my wallet?&#x20;
 

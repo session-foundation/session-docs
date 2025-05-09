@@ -14,7 +14,7 @@ As soon as you start staking and join the network, you begin earning rewards. Yo
 
 ### Staking Portal
 
-The Staking Portal provides a simple, easy-to-use web interface for you to manage your stakes and rewards. All you need is a wallet (such as MetaMask) and a browser. Using the Session Staking Portal, you can generally stake within minutes.
+The [Staking Portal](https://stake.getsession.org/) provides a simple, easy-to-use web interface for you to manage your stakes and rewards. All you need is an Ethereum wallet (such as MetaMask) and a browser. Using the Session Staking Portal, you can generally stake within minutes.
 
 ### Scaling rewards
 

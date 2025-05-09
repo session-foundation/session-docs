@@ -8,9 +8,9 @@ The best way to participate in the Session Network is by operating or contributi
 
 All Session Nodes are required to deposit (or ‘stake') a fixed amount of Session Tokens and run validator software to register on the network.
 
-### Single nodes <a href="#docs-internal-guid-d0b9f261-7fff-16bc-d4c7-767475d8228a" id="docs-internal-guid-d0b9f261-7fff-16bc-d4c7-767475d8228a"></a>
+### Single contributor nodes <a href="#docs-internal-guid-d0b9f261-7fff-16bc-d4c7-767475d8228a" id="docs-internal-guid-d0b9f261-7fff-16bc-d4c7-767475d8228a"></a>
 
-Session Node operators manage the server (such as a VPS or home server) which runs the Session Node validator software. To run the software, the node will need to meet minimum hardware requirements, which can be found here. In a single contributor node, the node operator deposits the full stake required to register on the network.
+Session Node operators manage the server (such as a VPS or home server) which runs the Session Node validator software. To run the software, the node will need to meet minimum hardware requirements. In a single contributor node, the node operator deposits the full stake required to register on the network.
 
 Stakes can be deposited and managed using the [Staking Portal](https://stake.getsession.org/stake).
 

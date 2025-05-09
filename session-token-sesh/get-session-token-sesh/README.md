@@ -2,7 +2,7 @@
 
 Session Token has not yet been generated, and therefore cannot be purchased directly on open markets.&#x20;
 
-However, there are a few ways that you can guarantee access to Session Token prior to the Token Generation Event (TGE).&#x20;
+However, there are a few ways that you can guarantee access to Session Token prior to the Token Generation Event (TGE):
 
 ### Rewards Programs
 
@@ -14,7 +14,7 @@ You can gain access to Session Token prior to the Token Generation Event (TGE) b
 
 Session Token has not yet been generated, so it is not available on any exchanges.
 
-After generation, Session Token will be available on exchanges (including decentralized exchanges). Further announcements will be made via trusted channels.
+Further announcements will be made via trusted channels.
 
 <table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><a href="https://discord.gg/sessiontoken">Session Token Discord</a></td></tr><tr><td><a href="https://twitter.com/session_token">Session Token Twitter</a></td></tr></tbody></table>
 

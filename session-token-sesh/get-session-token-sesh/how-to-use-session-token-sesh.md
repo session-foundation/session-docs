@@ -11,7 +11,7 @@ Every node in the Session Network requires a stake of Session Tokens to activate
 Once the full stake is deposited, the node runs its validator software and registers on the network. Nodes are responsible for storing and validating data and transactions for the Session Network. This keeps Session secure for everyone, with stakers being rewarded with Session Tokens.
 
 {% hint style="info" %}
-_Learn more about Staking_ [_here_](../../session-network/staking/)
+_Learn more about staking_ [_here_](../../session-network/staking/)
 {% endhint %}
 
 #### Advanced features

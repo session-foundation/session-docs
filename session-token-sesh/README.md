@@ -22,6 +22,6 @@ As the native cryptocurrency of the Session ecosystem, Session Token can be used
 
 ### Get started
 
-|                    |                          |                  |                          |
-| ------------------ | ------------------------ | ---------------- | ------------------------ |
-| Session Token FAQs | Session Token Tokenomics | Rewards Programs | Get Session Token (SESH) |
+|                                                        |                                         |                                       |                                                     |
+| ------------------------------------------------------ | --------------------------------------- | ------------------------------------- | --------------------------------------------------- |
+| [Session Token FAQs](https://token.getsession.org/faq) | [Session Token Tokenomics](tokenomics/) | [Rewards Programs](rewards-programs/) | [Get Session Token (SESH)](get-session-token-sesh/) |
