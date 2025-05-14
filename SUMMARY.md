@@ -34,6 +34,7 @@
     * [Consensus](session-network/session-nodes/consensus.md)
     * [Swarms](session-network/session-nodes/swarms.md)
     * [Session Appchain](session-network/session-nodes/session-appchain.md)
+    * [Deregistration](session-network/session-nodes/deregistration.md)
   * [Session Protocol](session-network/session-protocol/README.md)
     * [Onion requests and message routing](session-network/session-protocol/onion-requests-and-message-routing.md)
     * [Account IDs and self managed keys](session-network/session-protocol/account-ids-and-self-managed-keys.md)
