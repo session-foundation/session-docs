@@ -2,7 +2,6 @@
 description: >-
   Find answers to common questions about running and staking to testnet nodes
   here.
-icon: question
 ---
 
 # Frequently Asked Questions (FAQ)
