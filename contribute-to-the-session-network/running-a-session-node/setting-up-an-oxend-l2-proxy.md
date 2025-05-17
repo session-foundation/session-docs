@@ -1,4 +1,5 @@
 ---
+description: Learn how to set up an oxend L2 proxy for running multiple Session Nodes.
 icon: shuffle
 ---
 

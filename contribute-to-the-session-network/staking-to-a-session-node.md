@@ -2,7 +2,7 @@
 
 Session Nodes can be run by a single contributor, or by multiple contributors who pool their test SESH to meet the staking requirement of 25,000. This guide covers how to stake to a multicontributor node which is awaiting contribution.&#x20;
 
-If you wish instead to register a node, you can find out how to do that [here](testnet/session-stagenet-node-setup/).
+If you wish instead to register a node, you can find out how to do that [here](running-a-session-node/).
 
 #### Step 1:
 

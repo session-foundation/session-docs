@@ -9,21 +9,21 @@ icon: question
 
 ## **What is the minimum and maximum I can stake to a Session node as an operator?**
 
-For single contributor nodes, you must provide the full stake of 20,000 Session Tokens yourself. For multicontributor nodes, as the operator, you must provide a minimum stake of 5,000 Session Tokens, and the remaining stake can be contributed by others. This allows for flexibility in multicontributor nodes, enabling collaboration while still requiring a minimum commitment from the operator.
+For single contributor nodes, you must provide the full stake of 25,000 SESH yourself. For multicontributor nodes, as the operator, you must provide a minimum stake of 6250 Session Tokens, and the remaining stake can be contributed by others. This allows for flexibility in multicontributor nodes, enabling collaboration while still requiring a minimum commitment from the operator.
 
-## If I am running a multicontributor node, do I also have to stake Session Tokens?
+## If I am running a multicontributor node, do I also have to stake SESH?
 
-Yes, if you run a multicontributor node, you are required to stake at least 5000 Session Tokens as the node operator. This ensures you have a vested interest in the node's performance and helps secure the network by maintaining a minimum stake commitment.
+Yes, if you run a multicontributor node, you are required to stake at least 6250 SESH as the node operator. This ensures you have a vested interest in the node's performance and helps secure the network by maintaining a minimum stake commitment.
 
 ## What is the multicontributor operator fee?
 
-Operators can set an operator fee on their multicontributor nodes, which is collected in Session Tokens. This fee helps operators to cover the costs of running a node. The fee is taken as a percentage of the node rewards allocated to the operator. Once the fee is deducted, the remaining rewards are distributed among all contributors (including the operator), proportional to stake amount.\
+Operators can set an operator fee on their multicontributor nodes, which is collected in SESH. This fee helps operators to cover the costs of running a node. The fee is taken as a percentage of the node rewards allocated to the operator. Once the fee is deducted, the remaining rewards are distributed among all contributors (including the operator), proportional to stake amount.\
 \
 For example: If a node earns 1000 Session Tokens and the operator sets a 10% fee, the operator keeps 100 tokens as their fee, and the remaining 900 tokens are split based on stake amounts—so, if the operator staked 50%, they’d get 450 tokens (550 in total), and two contributors with 25% stakes each would get 225 tokens each.
 
 ## How do staking rewards and operator fees get sent to my wallet address?
 
-Session Tokens earned through staking rewards or operator fees on multicontributor nodes do not get automatically sent to your wallet. Instead, to save on gas fees, they are held in a smart contract until you manually claim them. You can claim rewards anytime on your [My Stakes](https://stake.getsession.org/mystakes) page. Simply hit the Claim button. Your Session Tokens will then be sent to the rewards addressed you specified. This is either the wallet address you registered with, or a different address that you specified when configuring your node registration or stake to a multicontributor node.
+SESH earned through staking rewards or operator fees on multicontributor nodes do not get automatically sent to your wallet. Instead, to save on gas fees, they are held in a smart contract until you manually claim them. You can claim rewards anytime on your [My Stakes](https://stake.getsession.org/mystakes) page. Simply hit the Claim button. Your SESH will then be sent to the rewards addressed you specified. This is either the wallet address you registered with, or a different address that you specified when configuring your node registration or stake to a multicontributor node.
 
 ## Can I specify a separate rewards address from the wallet I am registering my node with or staking from?
 
@@ -31,7 +31,7 @@ Yes, you can specify a separate address to receive your rewards. The rewards add
 
 ## How do I reserve a stake for specific contributors to my multicontributor node?
 
-To reserve a stake for specific contributors to your node, collect the wallet addresses of the contributors you wish to reserve stakes for. When registering your multicontributor node using the Guided setup mode, you will be prompted to reserve stakes. You can then allocate a reserved stake amount for each of your contributors. If using the Express setup mode, you can also edit reserved stakes when finalising your node before registering and staking. Reserving stakes is particularly useful if you are collaborating with trusted contributors or if certain stakeholders need to secure their participation in your node.
+To reserve a stake for specific contributors to your node, collect the wallet addresses of the contributors you wish to reserve stakes for. When registering your multicontributor node using the **Guided** setup mode, you will be prompted to reserve stakes. You can then allocate a reserved stake amount for each of your contributors. If using the **Express** setup mode, you can also edit reserved stakes when finalising your node before registering and staking. Reserving stakes is particularly useful if you are collaborating with trusted contributors or if certain stakeholders need to secure their participation in your node.
 
 ## How many contributors can I reserve stakes for on my multicontributor node?
 
@@ -60,5 +60,7 @@ Yes, under certain conditions. It is not possible to unlock your stake from a mu
 ## Can I unlock my stake from a multicontributor node while it is operating? <a href="#unlock-stake-while-operating" id="unlock-stake-while-operating"></a>
 
 Yes, under certain conditions, depending on how much you are staking to the multicontributor node. \
+\
 Large contributors, who are staking more than ¼ of the full stake amount, can initiate an unlock at any time during the node's operation. The unlock period is 15 days, after which the stake can be reclaimed.  \
+\
 Small contributors, who are staking less than ¼ of the full stake amount, cannot initiate an unlock during the first 30 days of a node's operation, but can do so at any time after this initial 30-day period. As above, the unlock period is 15 days, after which the stake can be reclaimed.&#x20;

@@ -1,4 +1,5 @@
 ---
+description: Learn how to configure options for your Arbitrum RPC provider.
 icon: sliders-up
 ---
 
@@ -151,4 +152,4 @@ Some notes about all of the above controls on this page:
 * For the proxy node itself (i.e. the one making the L2 requests), all of the options described on this page apply and control how the proxy gets its information, with one difference: the `l2-refresh` setting on a node configured as proxy defaults to 30s instead of 60s, to make the default proxy a little more redundant in its attempts to fetch updates.
 * Proxy-using nodes do not have a refresh interval in the same way as L2 provider using nodes: each proxy they are connected to will push L2 updates to any connected nodes as soon as they are retrieved, and so effectively the proxy's refresh interval becomes the update interval of all nodes using that proxy.
 
-See [setting-up-an-oxend-l2-proxy.md](../testnet/session-stagenet-node-setup/setting-up-an-oxend-l2-proxy.md "mention") for a full guide! N
+See [setting-up-an-oxend-l2-proxy.md](setting-up-an-oxend-l2-proxy.md "mention") for a full guide!&#x20;
