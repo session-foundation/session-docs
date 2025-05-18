@@ -25,3 +25,18 @@ As the native cryptocurrency of the Session ecosystem, Session Token can be used
 |                                                        |                                         |                                       |                                                     |
 | ------------------------------------------------------ | --------------------------------------- | ------------------------------------- | --------------------------------------------------- |
 | [Session Token FAQs](https://token.getsession.org/faq) | [Session Token Tokenomics](tokenomics/) | [Rewards Programs](rewards-programs/) | [Get Session Token (SESH)](get-session-token-sesh/) |
+
+### Contract Addresses
+
+SESH Token Contract on Ethereum and Arbitrum One:\
+0x10Ea9E5303670331Bdddfa66A4cEA47dae4fcF3b
+
+Session Node Rewards Contract:\
+0xC2B9fC251aC068763EbDfdecc792E3352E351c00
+
+Reward Rate Pool Contract:\
+0x11f040E89dFAbBA9070FFE6145E914AC68DbFea0 Service Node Contribution
+
+Factory Contract:\
+0x8129bE2D5eF7ACd39483C19F28DE86b7EF19DBCA
+
