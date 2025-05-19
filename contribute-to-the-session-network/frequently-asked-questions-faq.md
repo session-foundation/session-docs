@@ -50,7 +50,7 @@ If a node is not exited within 7 days after becoming eligible (22 days after the
 
 ## What is the network-wide claims limit? <a href="#network-claims-limit" id="network-claims-limit"></a>
 
-To keep the Session Network secure, there is a network-wide limit on how much can be claimed within a 12 hour period. This provides additional security against potential exploits.
+To keep the Session Network secure, there is a network-wide limit on how much SESH can be claimed as rewards from the Staking Portal within a 12 hour period. This provides additional security against potential exploits. Up to 1,000,000 SESH can be claimed with a 12 hour period. The 12 hour periods span 00:00 UTC to 12:00 UTC and 12:00 UTC to 00:00 UTC.
 
 ## Can I unlock my stake from a multicontributor node before it starts operating? <a href="#unlock-stake-before-registration" id="unlock-stake-before-registration"></a>
 
