@@ -12,7 +12,7 @@ You can run Session Node software on any device running a supported operating sy
 
 #### **Requirements**
 
-These are the current basic requirements for running a Session Node.  Note that these are generally much less than required for a mainnet node!
+These are the current basic requirements for running a Session Node.
 
 <table><thead><tr><th width="242">Spec</th><th>Requirement</th></tr></thead><tbody><tr><td>Latest Session Node software</td><td>Latest Session Node <code>.deb</code> packages (installed via the steps below) or latest <code>stable</code> branch build from source.</td></tr><tr><td>Server operating system</td><td>Ubuntu 22.04+ (latest LTS recommended) or Debian 11+ (latest stable recommended)</td></tr><tr><td>Storage</td><td>45GB</td></tr><tr><td>RAM</td><td>4-8GB</td></tr><tr><td>Connectivity</td><td>100Mb or faster</td></tr><tr><td>Traffic</td><td>1 TB per month or more</td></tr><tr><td>Power</td><td>Redundant with remote cycling ability, as found in most data centres</td></tr></tbody></table>
 
@@ -20,8 +20,8 @@ These are the current basic requirements for running a Session Node.  Note that 
 
 #### Session Nodes in a nutshell
 
-* A Session Node starts as a full node on the Arbitrum One blockchain
-* The full node becomes a Session Node when the owner locks the required amount of 25,000 SESH and submits a registration transaction
+* A Session Node starts as a full node on the Session [appchain](../../session-network/session-nodes/session-appchain.md) that monitors the [Arbitrum One](https://arbitrum.io/) blockchain
+* The full node becomes a Session Node when the owner locks the required amount of 25,000 SESH and submits a registration transaction to Arbitrum
 * Once accepted by the network, the Session Node starts performing node operations and becomes eligible to earn rewards in the form of SESH
 * Multiple participants can stake into one Session Node and can have the reward automatically distributed among them
 
@@ -171,7 +171,7 @@ sudo apt update
 
 ### Step 4: Getting an Arbitrum One RPC provider account
 
-You will need to set up an Arbitrum One RPC provider for your `oxend` to interact with the Arbitrum network. This setup will allow your Session node to communicate with the Arbitrum One blockchain and to witness and facilitate transactions.&#x20;
+You will need to set up an Arbitrum One RPC provider for your `oxend` to interact with the Arbitrum network. This setup will allow your Session Node to communicate with the Arbitrum One blockchain and to witness and facilitate transactions.&#x20;
 
 You can use public RPC providers like Infura and Alchemy or set up your own Arbitrum full node and connect to that node locally.&#x20;
 
@@ -271,9 +271,9 @@ The daemon will output something which looks similar to:
 
 {% code overflow="wrap" %}
 ```
-Submitting operator-only information to stake.getsession.org, please wait.
+Submitting L2 staking information to https://stake.getsession.org/register/[Session Node ID]
  
-Submitted operator-only information to the staking website successfully!
+Submitted registration info to the staking website successfully!
 
 View your registration at: https://stake.getsession.org/register/[Session Node ID]
 ```
@@ -283,15 +283,15 @@ _NOTE: This information will be automatically submitted to the Staking Portal to
 
 #### 6.4a: Registering your single contributor Session Node
 
-To register and stake your Session Node, ensure your Etherem wallet has a balance of at least 25,000 test SESH as well as sufficient ETH for gas.
+To register and stake your Session Node, ensure your Etherem wallet has a balance of at least 25,000 SESH as well as sufficient ETH on the Arbitrum One network for gas.
 
-Navigate to the [Staking Portal](https://stake.getsession.org/) and connect your wallet. On the **Register** page, the node you have prepared registration for will appear in the 'Your Prepared Registrations' list.\
+Navigate to the [Staking Portal](https://stake.getsession.org/) and connect your wallet. The node you have prepared registration for will appear in the 'Your Prepared Registrations' list.\
 \
-View the prepared node’s details and confirm your registration and stake of 25,000 test SESH.
+View the prepared node’s details and confirm your registration and stake of 25,000 SESH.
 
-#### 6.4a: Registering your multicontributor Session Node
+#### 6.4b: Registering your multicontributor Session Node
 
-To register and stake your Session Node, ensure your Ethereum wallet has a balance of at least 6,250 test SESH as well as sufficient ETH on the Arbitrum network for gas.
+To register and stake your Session Node, ensure your Ethereum wallet has a balance of at least 6,250 SESH as well as sufficient ETH on the Arbitrum One network for gas.
 
 Navigate to the [Staking Portal](https://stake.getsession.org/) and connect your wallet. On the **Register** page, the node you have prepared registration for will appear in the 'Your Prepared Registrations' list.
 
@@ -301,7 +301,7 @@ You node will be listed on the [Staking Portal](https://stake.getsession.org/) a
 
 ### Step 7: Session Node status check
 
-After you've staked to your Session Node, you can check that Session Node is running, recognised, and eligible to earn SESH rewards on the [My Stakes](https://stake.getsession.org/mystakes) page.
+After you've staked to your Session Node, you can check that Session Node is running, recognised, and eligible to earn SESH rewards on the [My Stakes](https://stake.getsession.org/mystakes) page. This process typically takes 9-12 minutes as the network securely witnesses and finalizes the registration on the chain.
 
 ## Operating your node
 
@@ -326,7 +326,7 @@ During the upgrade, all instances of `oxend` will be restarted if they are curre
 If for some reason you want to install only Oxen package upgrades but not other system package updates, then instead of the `sudo apt upgrade` you can use:
 
 ```
-sudo apt install session-node
+sudo apt install session-service-node
 ```
 
 ### Monitoring
@@ -384,16 +384,16 @@ oxen-sn-keys restore-bls --overwrite /var/lib/oxen/key_bls
 You can choose either to overwrite your existing key files in the /var/lib/oxen directory using this command or create new key files and swap them out with the existing files, once keys are overwritten or swapped your node can be restarted with the following command:&#x20;
 
 ```
-systemctl restart oxen-session-node
+systemctl restart oxen-node
 ```
 
 <mark style="color:red;">IMPORTANT: Never remove or replace keys on an active, registered Session Node!</mark>
 
 ### Updating L2 Providers and additional node configuration
 
-You can reconfigure your Session by modifying the file at `/etc/oxen.conf` where settings are kept for the current running instance.&#x20;
+You can reconfigure your Session by modifying the file at `/etc/oxen/oxen.conf` where settings are kept for the current running instance.&#x20;
 
-In `/etc/oxen.conf` each line denotes a configurable option. \
+In `/etc/oxen/oxen.conf` each line denotes a configurable option. \
 \
 For example, in the following, the Session node is configured to use `http://example.com` as the primary L2 provider and `http://backup.example.com` as a backup if the first provider falls behind.
 
@@ -414,17 +414,17 @@ Some additional options are available for advanced users to configure how the Se
 * `l2-check-interval` When multiple L2 providers are specified, this specifies how often (in seconds) all of them should be checked to see if they are synced and, if not, switch to a backup provider. Earlier L2 providers will be preferred when all providers are reasonably close (default is 170)
 * `l2-check-threshold` When multiple L2 providers are specified, this is the threshold (in number of blocks) behind the best provider height before a given provider is considered out of sync (default is 120).
 
-An exhaustive list of available options can be found by running `oxend --help`.
+An exhaustive list of available options can be found by running `oxend --help`. For more information, see the Oxend L2 tracker tuning page for ensuring that the daemon does not overload the configured L2 provider.
 
 After making your changes, you must restart your node for the new settings to apply. Use the following command:
 
 ```
-systemctl restart oxen-session-node
+systemctl restart oxen-node
 ```
 
 ### Unlocking your stake
 
-Session Nodes will continually earn test SESH rewards indefinitely until an exit is requested or the node becomes deregistered. To request an exit to reclaim your test SESH stake, simply open the [Staking Portal](https://stake.getsession.org/) and navigate to the [My Stakes](https://stake.getsession.org/mystakes) page. You can then click Request Exit for any stake you wish to initiate an unlock for.
+Session Nodes will continually earn SESH rewards indefinitely until an exit is requested or the node becomes deregistered. To request an exit to reclaim your SESH stake, simply open the [Staking Portal](https://stake.getsession.org/) and navigate to the [My Stakes](https://stake.getsession.org/mystakes) page. You can then click Request Exit for any stake you wish to initiate an unlock for.
 
 Your Session Node will become eligible to exit 15 days after the initial request.
 
@@ -437,14 +437,14 @@ If the node is not removed within 7 days becoming eligible to exit (22 days afte
 
 Deregistrations can be issued at any point during the active lifecycle of a Session Node, including during the period after requesting an exit.
 
-Deregistration removes your Session Node from the network, and your stake(s) become locked and unspendable for 30 days on mainnet from the block in which the Session Node was deregistered. After this period, operator and contributors can retrieve their stakes by clicking the Claim button in the Staking Portal.
+Deregistration removes your Session Node from the network, and your stake(s) become locked and unspendable for 30 days from the block in which the Session Node was deregistered. After this period, operator and contributors can retrieve their stakes by clicking the Claim button in the Staking Portal.
 
-Receiving a deregistration **after** the node's participant(s) have already submitted an exit request overrides the 15 day stake unlock time, and sets the unlock time to 30 days on mainnet.
+Receiving a deregistration **after** the node's participant(s) have already submitted an exit request overrides the 15 day stake unlock time, and sets the unlock time to 30 days.
 
 To avoid losing 0.2% of their stake to the liquidation penalty, operators can manually exit their node by clicking the Exit button in the Staking Portal. The stake will still remain locked for 30 days. If the node has not been manually exited within 7 days following deregistration, it is eligible for liquidation.
 
 ### Conclusion
 
-Well done! Your Session Node is configured, operational, and will now begin receiving ESH rewards.
+Well done! Your Session Node is configured, operational, and will now begin receiving SESH rewards.
 
 Having trouble? Head to the [Session Token Discord](https://discord.gg/sessiontoken) to access support.&#x20;
