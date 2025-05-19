@@ -16,7 +16,7 @@ You can find a list of known issues and feature requests [here](https://github.c
 
 ### Contributing to development Session Desktop
 
-Session’s Android client is predominantly written using TypeScript. If you are familiar with TypeScript, then you can likely contribute to Session on Desktop.
+Session’s Desktop client is predominantly written using TypeScript. If you are familiar with TypeScript, then you can likely contribute to Session on Desktop.
 
 You can find a list of known issues and feature requests [here](https://github.com/session-foundation/session-desktop/issues). Many of these issues contain tags and comments to help you find an issue that suits your skills and experience level.
 
