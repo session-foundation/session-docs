@@ -401,7 +401,6 @@ For example, in the following, the Session node is configured to use `http://exa
 data-dir=/var/lib/oxen
 log-file=/var/log/oxen.log
 service-node=1
-stagenet=1
 service-node-public-ip=<your node's IP address>
 l2-provider=http://example.com
 l2-provider=http://backup.example.com
