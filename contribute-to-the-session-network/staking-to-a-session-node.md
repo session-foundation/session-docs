@@ -1,6 +1,10 @@
+---
+description: Learn how to stake to Session Nodes (without needing to run your own node).
+---
+
 # Staking to a Session Node
 
-Session Nodes can be run by a single contributor, or by multiple contributors who pool their test SESH to meet the staking requirement of 25,000. This guide covers how to stake to a multicontributor node which is awaiting contribution.&#x20;
+Session Nodes can be run by a single contributor, or by multiple contributors who pool their SESH to meet the staking requirement of 25,000. This guide covers how to stake to a multicontributor node which is awaiting contribution.&#x20;
 
 If you wish instead to register a node, you can find out how to do that [here](running-a-session-node/).
 
