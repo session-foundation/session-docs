@@ -132,7 +132,7 @@ You only need to do this step the first time you want to set up the Oxen reposit
 
 To add the `apt` repository, run the following commands.
 
-This first command installs the public key used to sign the stagenet Session Node packages:
+This first command installs the public key used to sign the Session Node packages:
 
 ```
 sudo curl -so /etc/apt/trusted.gpg.d/oxen.gpg https://deb.oxen.io/pub.gpg
@@ -239,7 +239,7 @@ You can also get basic statistics (such as uptime proof and ping times) on the r
 systemctl status oxen-node
 ```
 
-### Step 6: Stagenet Session Node Registration
+### Step 6: Session Node Registration
 
 #### 6.1: Retrieving your wallet address
 
@@ -381,7 +381,7 @@ For BLS keys:&#x20;
 oxen-sn-keys restore-bls --overwrite /var/lib/oxen/key_bls
 ```
 
-You can choose either to overwrite your existing key files in the /var/lib/oxen/stagenet directory using this command or create new key files and swap them out with the existing files, once keys are overwritten or swapped your node can be restarted with the following command:&#x20;
+You can choose either to overwrite your existing key files in the /var/lib/oxen directory using this command or create new key files and swap them out with the existing files, once keys are overwritten or swapped your node can be restarted with the following command:&#x20;
 
 ```
 systemctl restart oxen-session-node
@@ -391,15 +391,15 @@ systemctl restart oxen-session-node
 
 ### Updating L2 Providers and additional node configuration
 
-You can reconfigure your Session by modifying the file at `/etc/oxen/stagenet.conf` where settings are kept for the current running instance.&#x20;
+You can reconfigure your Session by modifying the file at `/etc/oxen.conf` where settings are kept for the current running instance.&#x20;
 
-In `/etc/oxen/stagenet.conf` each line denotes a configurable option. \
+In `/etc/oxen.conf` each line denotes a configurable option. \
 \
 For example, in the following, the Session node is configured to use `http://example.com` as the primary L2 provider and `http://backup.example.com` as a backup if the first provider falls behind.
 
 ```
-data-dir=/var/lib/oxen/stagenet
-log-file=/var/log/oxen/stagenet.log
+data-dir=/var/lib/oxen
+log-file=/var/log/oxen.log
 service-node=1
 stagenet=1
 service-node-public-ip=<your node's IP address>
@@ -415,41 +415,37 @@ Some additional options are available for advanced users to configure how the Se
 * `l2-check-interval` When multiple L2 providers are specified, this specifies how often (in seconds) all of them should be checked to see if they are synced and, if not, switch to a backup provider. Earlier L2 providers will be preferred when all providers are reasonably close (default is 170)
 * `l2-check-threshold` When multiple L2 providers are specified, this is the threshold (in number of blocks) behind the best provider height before a given provider is considered out of sync (default is 120).
 
-An exhaustive list of available options can be found by running `oxend-stagenet --help`.
+An exhaustive list of available options can be found by running `oxend --help`.
 
 After making your changes, you must restart your node for the new settings to apply. Use the following command:
 
 ```
-systemctl restart oxen-stagenet-node
+systemctl restart oxen-session-node
 ```
 
 ### Unlocking your stake
 
-Stagenet Session Nodes will continually earn test SESH rewards indefinitely until an exit is requested or the node becomes deregistered. To request an exit to reclaim your test SESH stake, simply open the [Staking Portal](https://stake.getsession.org/) and navigate to the [My Stakes](https://stake.getsession.org/mystakes) page. You can then click Request Exit for any stake you wish to initiate an unlock for.
+Session Nodes will continually earn test SESH rewards indefinitely until an exit is requested or the node becomes deregistered. To request an exit to reclaim your test SESH stake, simply open the [Staking Portal](https://stake.getsession.org/) and navigate to the [My Stakes](https://stake.getsession.org/mystakes) page. You can then click Request Exit for any stake you wish to initiate an unlock for.
 
-Your stagenet Session Node will become eligible to exit 1 day after the initial request (and after 15 days on mainnet).
+Your Session Node will become eligible to exit 15 days after the initial request.
 
-When a stagenet Session Node has become eligible to exit (after 1 day has elapsed after an exit request), the node must formally exit the network within 2 hours of becoming eligible (or within 15 days after becoming eligible to exit on mainnet). Simply click the Exit button on the node in the Staking Portal. After exiting, you can claim your stake by clicking the Claim button on your My Stakes page.
+When a Session Node has become eligible to exit after 15 days, the node must formally exit the network within 7 days of becoming eligible to exit. Simply click the Exit button on the node in the Staking Portal. After exiting, you can claim your stake by clicking the Claim button on your My Stakes page.
 
-If the node is not removed within 2 hours becoming eligible to exit (or 7 days after becoming eligible on mainnet, 22 days after the initial exit request), the node becomes eligible for liquidation by other users. When a node gets liquidated, a 0.2% penalty is taken from the operator's stake: 0.1% of the operator’s stake is transferred to the liquidator, and 0.1% of the operator’s stake is returned to the Staking Reward Pool.\
+If the node is not removed within 7 days becoming eligible to exit (22 days after the initial exit request), the node becomes eligible for liquidation by other users. When a node gets liquidated, a 0.2% penalty is taken from the operator's stake: 0.1% of the operator’s stake is transferred to the liquidator, and 0.1% of the operator’s stake is returned to the Staking Reward Pool.\
 
 
 ### Deregistrations
 
-Deregistrations can be issued at any point during the active lifecycle of a stagenet Session Node, including during the period after requesting an exit.
+Deregistrations can be issued at any point during the active lifecycle of a Session Node, including during the period after requesting an exit.
 
-Deregistration removes your stagenet Session Node from the network, and your stake(s) become locked and unspendable for 2 days (30 days on mainnet) from the block in which the stagenet Session Node was deregistered. After this period, operator and contributors can retrieve their stakes by clicking the Claim button in the Staking Portal.
+Deregistration removes your Session Node from the network, and your stake(s) become locked and unspendable for 30 days on mainnet from the block in which the Session Node was deregistered. After this period, operator and contributors can retrieve their stakes by clicking the Claim button in the Staking Portal.
 
-Receiving a deregistration **after** the node's participant(s) have already submitted an exit request overrides the 1 day stake unlock time (15 days on mainnet), and sets the unlock time to 2 days (30 days on mainnet).
+Receiving a deregistration **after** the node's participant(s) have already submitted an exit request overrides the 15 day stake unlock time, and sets the unlock time to 30 days on mainnet.
 
-There are currently bugs affecting deregistrations, and development work is underway to optimise this process. Once finalized, this is how liquidations will work in the case of a deregistration:
-
-To avoid losing 0.2% of their stake to the liquidation penalty, operators can manually exit their node by clicking the Exit button in the Staking Portal. The stake will still remain locked for 30 days. If the node has not been manually exited within 2 hours following deregistration (7 days on mainnet), it is eligible for liquidation.
-
-Running a stagenet Session Node during will be more challenging than running an Oxen Service Node and deregistrations may be more likely. Please stay up to date with changes and ongoing development via [Discord](https://discord.com/invite/Xj3HpbWxbA).
+To avoid losing 0.2% of their stake to the liquidation penalty, operators can manually exit their node by clicking the Exit button in the Staking Portal. The stake will still remain locked for 30 days. If the node has not been manually exited within 7 days following deregistration, it is eligible for liquidation.
 
 ### Conclusion
 
-Well done! Your stagenet Session Node is configured, operational, and will now begin receiving test SESH rewards.
+Well done! Your Session Node is configured, operational, and will now begin receiving ESH rewards.
 
-Having trouble? Head to the [Session Token Discord](https://discord.com/invite/Xj3HpbWxbA) to access support.&#x20;
+Having trouble? Head to the [Session Token Discord](https://discord.gg/sessiontoken) to access support.&#x20;
