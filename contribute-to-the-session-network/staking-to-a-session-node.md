@@ -22,7 +22,7 @@ The listed nodes will show the minimum and maximum contribution amounts, as well
 
 Once you have selected a node to stake to, hit **View** to examine the node details.
 
-From this menu you can enter the amount of SESH you wish to stake, and then hit the green button which reads 'Stake (Amount) SESH to Multicontributor Node'
+From this menu you can enter the amount of SESH you wish to stake, and then hit the green 'Stake' button.&#x20;
 
 #### Step 4:
 
