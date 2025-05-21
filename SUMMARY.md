@@ -52,7 +52,7 @@
     * [Session Stagenet Node Setup](contribute-to-the-session-network/testnet/session-stagenet-node-setup/README.md)
       * [Setting up an oxend L2 proxy](contribute-to-the-session-network/testnet/session-stagenet-node-setup/setting-up-an-oxend-l2-proxy.md)
 * [Twitter / X](https://twitter.com/session_token)
-* [Discord](https://discord.gg/pVYQvcSVrW)
+* [Discord](https://discord.gg/sessiontoken)
 * [Session Token Website](https://token.getsession.org)
 * [Session Website](https://getsession.org)
 * [Session Whitepaper](https://getsession.org/whitepaper)
