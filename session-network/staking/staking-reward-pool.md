@@ -36,7 +36,7 @@ To avoid unnecessary transaction fees, rewards are held by the smart contract un
 
 ### Genesis provision
 
-The Staking Reward Pool will receive a minimum genesis provision of 40,000,000 Session Tokens. Using the above formula, the network reward for Day 1 can be calculated:
+The Staking Reward Pool will have a genesis provision of 40,000,000 Session Tokens. Using the above formula, the network reward for Day 1 can be calculated:
 
 $$
 \dfrac{0.151(40,000,000)}{365}=16547.95
@@ -44,5 +44,7 @@ $$
 
 This amount will be equally divided by the amount of active and registered nodes on Day 1.&#x20;
 
-It is possible additional tokens may be committed to the Staking Reward Pool between now and the Token Generation Event (TGE).
+An additional 23,177,550 SESH tokens have been added to the Staking Reward Pool, bringing the total to 63,177,550 SESH. While this full amount will be in the pool on Day 1, the rewards paid out will initially be calculated based on the original 40,000,000 SESH genesis provision parameter. \
+\
+Due to a pre-existing security mechanism designed to prevent manipulation, the reward calculation will gradually adjust to reflect the actual 63,177,550 SESH balance over approximately 30 days. This security feature limits how quickly reward rates can increase between blocks, ensuring network stability.
 
