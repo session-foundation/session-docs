@@ -1,18 +1,10 @@
 # Get Session Token (SESH)
 
-Session Token has not yet been generated, and therefore cannot be purchased directly on open markets.&#x20;
+To bridge SESH between the Arbitrum One and Ethereum Networks, you must only use the official Arbitrum bridge [bridge.arbitrum.io](https://bridge.arbitrum.io/).
 
-However, there are a few ways that you can guarantee access to Session Token prior to the Token Generation Event (TGE):
-
-### Rewards Programs
-
-You can gain access to Session Token prior to the Token Generation Event (TGE) by staking Oxen coins to a registered Oxen Service Node to be automatically swapped for Session Tokens at TGE; or by holding Oxen coins and burning them in exchange for Session Tokens after TGE in the Oxen Coin Claims program.
-
-<table data-view="cards"><thead><tr><th align="center"></th></tr></thead><tbody><tr><td align="center"><a href="../rewards-programs/oxen-coin-claims.md">Learn more about Oxen Coin Claims</a></td></tr><tr><td align="center"><a href="../rewards-programs/service-node-bonus-program.md">Learn more about the Service Node Bonus Program</a></td></tr></tbody></table>
+Using another bridge could lead to you having another kind of wrapped token which will not be compatible with the [Arbitrum](https://app.uniswap.org/explore/pools/arbitrum/0x249afd31a49d9bd44259b8f03dd74030d7d41153bc891d12f469c5cb94b03729) and [Ethereum](https://app.uniswap.org/explore/pools/ethereum/0x249afd31a49d9bd44259b8f03dd74030d7d41153bc891d12f469c5cb94b03729) Uniswap pools.
 
 ### Session Token on Exchanges
-
-Session Token has not yet been generated, so it is not available on any exchanges.
 
 Further announcements will be made via trusted channels.
 
