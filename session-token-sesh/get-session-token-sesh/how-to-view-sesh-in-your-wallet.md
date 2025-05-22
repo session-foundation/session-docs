@@ -21,11 +21,11 @@ Here are links to step-by-step guides to help you add test SESH to the most popu
 [How to import tokens into your MyEtherWallet](https://help.myetherwallet.com/en/articles/5974186-custom-tokens-on-mew)
 
 You will be prompted to enter the below details:\
-**Token Contract Address:** \[TBD]\
+**Token Contract Address:** 0x10Ea9E5303670331Bdddfa66A4cEA47dae4fcF3b\
 **Token Symbol:** SESH\
 **Token Decimal:** 9
 
-You should also make sure you’re on the Arbitrum network in your wallet before you get started.
+You should also make sure you’re on the Arbitrum One network in your wallet before you get started.
 
 ### Why don’t tokens show up automatically in my wallet?&#x20;
 
