@@ -1,6 +1,6 @@
 # Tokenomics
 
-The maximum supply of Session Token is 240,000,000. At token genesis, the circulating supply will be a maximum of 80,000,000 Session Tokens.
+The maximum supply of Session Token is 240,000,000. At token genesis, the circulating supply was 79,000,000 Session Tokens.
 
 Session Token is a utility token intended to be used within the Session application and for Session Network purposes. This page provides a summary of Session's tokenomic principles.
 
@@ -44,7 +44,7 @@ The Staking Reward Pool is the ecosystem’s core mechanism for providing incent
 
 Tokens in the pool are time-locked in a smart contract and released at a targeted rate of 14% per year. The tokens released are awarded to active and registered nodes in the Session Network.&#x20;
 
-At TGE, the Staking Reward Pool will have 40,000,000 Session Tokens.
+At TGE, the Staking Reward Pool had 63,177,550 Session Tokens.
 
 #### Dynamic rewards
 
