@@ -13,7 +13,9 @@ Session Token has a maximum supply of 240,000,000. \
 
 ***
 
-The remaining 161,000,000 are subject to varying lockup conditions, including:
+The remaining 161,000,000 are subject to varying lockup conditions.&#x20;
+
+#### Lockup Conditions
 
 <details>
 
