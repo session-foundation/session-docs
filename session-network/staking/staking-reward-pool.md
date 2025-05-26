@@ -24,7 +24,13 @@ $$
 \dfrac{Daily\:Network\:Reward}{Nodes\:in\:network}=Node\:Reward
 $$
 
-Moreover, if you are a contributor to a node, your individual reward can be calculated by multiplying the node reward by your percentage of the full stake (less operator fees).
+Moreover, if you are a contributor to a node, your individual reward can be calculated by multiplying the node reward by your percentage of the full stake, after accounting for operator fees as follows. \
+\
+Operators can set an operator fee on their multicontributor nodes, which is collected in SESH. This fee helps operators to cover the costs of running a node. The fee is taken as a percentage of the node rewards allocated to the operator. Once the fee is deducted, the remaining rewards are distributed among all contributors (including the operator), proportional to stake amount.
+
+{% hint style="info" %}
+**For example:** If a node earns 1000 Session Tokens and the operator sets a 10% fee, the operator keeps 100 tokens as their fee, and the remaining 900 tokens are split based on stake amounts—so, if the operator staked 50%, they’d get 450 tokens (550 in total), and two contributors with 25% stakes each would get 225 tokens each.
+{% endhint %}
 
 Note that the Staking Reward Pool is dynamic, and it is not possible to effectively predict or account for future tokens added to the pool.
 
