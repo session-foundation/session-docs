@@ -8,9 +8,9 @@ For Staking guides, check out the [Contribute to the Session Network page](../..
 
 Regardless of how many Session Tokens you have, you can contribute to the network’s security and receive rewards.
 
-### Instant rewards
+### Claim rewards anytime
 
-As soon as you start staking and join the network, you begin earning rewards. Your rewards can be claimed whenever it is convenient for you.&#x20;
+24 hours after you start staking, you start earning SESH rewards for helping secure the network. Your rewards can be claimed whenever it is convenient for you.&#x20;
 
 ### Staking Portal
 
