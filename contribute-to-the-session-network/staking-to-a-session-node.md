@@ -30,6 +30,12 @@ Your stake will be contributed to the node and once the total amount staked has 
 \
 **Note:** To view rewards earned from staking vesting SESH, you'll need to **first turn off Vesting Mode**. Your rewards will be visible together with any rewards earned from non-vesting staked SESH on your [My Stakes](https://stake.getsession.org/mystakes) page.&#x20;
 
+### About the Multicontributor Operator Fee
+
+Operators can set an operator fee on their multicontributor nodes, which is collected in SESH. This fee helps operators to cover the costs of running a node. The fee is taken as a percentage of the node rewards allocated to the operator. Once the fee is deducted, the remaining rewards are distributed among all contributors (including the operator), proportional to stake amount.
+
+For example: If a node earns 1000 Session Tokens and the operator sets a 10% fee, the operator keeps 100 tokens as their fee, and the remaining 900 tokens are split based on stake amounts—so, if the operator staked 50%, they’d get 450 tokens (550 in total), and two contributors with 25% stakes each would get 225 tokens each.
+
 ### Unlocking your stake
 
 If you're contributing a stake to a node, you can request to unlock your stake under certain conditions. \
