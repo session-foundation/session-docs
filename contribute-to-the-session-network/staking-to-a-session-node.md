@@ -10,7 +10,7 @@ If you wish instead to register a node, you can find out how to do that [here](r
 
 #### Step 1:
 
-Navigate to the [Staking Portal](https://stake.getsession.org/) and connect your wallet.
+Navigate to the [Staking Portal](https://stake.getsession.org/) and connect your wallet. If you wish to stake your vesting SESH tokens, please ensure that Vesting Mode is **switched on.**&#x20;
 
 #### Step 2:
 
@@ -26,7 +26,9 @@ From this menu you can enter the amount of SESH you wish to stake, and then hit 
 
 #### Step 4:
 
-Your stake will be contributed to the node and once the total amount staked has reached 25,000 it will be registered on the network and you will begin earning rewards.
+Your stake will be contributed to the node and once the total amount staked has reached 25,000 it will be registered on the network and you will begin earning rewards. \
+\
+**Note:** To view rewards earned from staking vesting SESH, you'll need to **first turn off Vesting Mode**. Your rewards will be visible together with any rewards earned from non-vesting staked SESH on your [My Stakes](https://stake.getsession.org/mystakes) page.&#x20;
 
 ### Unlocking your stake
 
