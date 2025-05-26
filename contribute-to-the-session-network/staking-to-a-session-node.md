@@ -26,7 +26,7 @@ From this menu you can enter the amount of SESH you wish to stake, and then hit 
 
 #### Step 4:
 
-Your stake will be contributed to the node and once the total amount staked has reached 25,000 it will be registered on the network and you will begin earning rewards. \
+Your stake will be contributed to the node and once the total amount staked has reached 25,000 it will be registered on the network. After 24 hours of the node being registered and active on the network, you will begin earning rewards. \
 \
 **Note:** To view rewards earned from staking vesting SESH, you'll need to **first turn off Vesting Mode**. Your rewards will be visible together with any rewards earned from non-vesting staked SESH on your [My Stakes](https://stake.getsession.org/mystakes) page.&#x20;
 
