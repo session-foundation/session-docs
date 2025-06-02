@@ -1,6 +1,6 @@
 # Oxen Coin Claims
 
-The Oxen Coin Claims Program allows users to swap their unstaked Oxen coins for Session Token. If your Oxen is staked, you can participate in the[ Service Node Bonus](https://docs.getsession.org/tokenomics/genesis-tokenomics/service-node-bonus) program.
+The Oxen Coin Claims Program allows users to swap their unstaked Oxen coins for Session Token.
 
 **30,000,000 Session Tokens** are available through the Oxen Coin Claims Program. The Session Tokens available in this program represents 37.5% of the Genesis supply. You can read more about the genesis tokenomics[ here](https://docs.getsession.org/tokenomics/genesis-tokenomics).
 

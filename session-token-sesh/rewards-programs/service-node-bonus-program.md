@@ -1,8 +1,8 @@
 # Service Node Bonus Program
 
-The Service Node Bonus Program is rewarding existing Oxen Service Node operators and contributors for their contribution to the network and incentivizing the transition of the Oxen Service Node network to the new Session Network.
+The Service Node Bonus Program rewarded existing Oxen Service Node operators and contributors for their contribution to the network and incentivizing the transition of the Oxen Service Node network to the new Session Network.
 
-**30,000,000 Session Tokens** will be awarded to participating Oxen Service Nodes upon Session Token’s Token Generation Event (TGE). The Session Tokens available in this program represents 37.5% of the Genesis supply. You can read more about the genesis tokenomics[ here](https://docs.getsession.org/tokenomics/genesis-tokenomics).
+**30,000,000 Session Tokens** were awarded to participating Oxen Service Nodes upon Session Token’s Token Generation Event (TGE). The Session Tokens available in this program represents 37.5% of the Genesis supply. You can read more about the genesis tokenomics[ here](https://docs.getsession.org/tokenomics/genesis-tokenomics).
 
 {% hint style="info" %}
 Along with the parallel Oxen Coin Claims Program (30,000,000 SESH allocated), these programs represent 75% of the maximum Genesis supply and 25% of the maximum supply of Session Token.
