@@ -6,8 +6,6 @@ coverY: 0
 
 # Session Token (SESH)
 
-<mark style="background-color:green;">**Session Token staking and rewards contracts will be deployed on Arbitrum One.**</mark>
-
 Session Token is an EVM-compatible token utilised in the Session ecosystem to unlock premium features in Session messenger and as a security and incentivization layer for Session Nodes.
 
 It is the core of the Session ecosystem, enabling the decentralized network that powers Session messenger. Session Token offers a new model for bootstrapping and growing a communications overlay network which prioritizes user privacy while remaining sustainable.
@@ -38,5 +36,6 @@ Reward Rate Pool Contract:\
 0x11f040E89dFAbBA9070FFE6145E914AC68DbFea0 Service Node Contribution
 
 Factory Contract:\
-0x8129bE2D5eF7ACd39483C19F28DE86b7EF19DBCA
+0x8129bE2D5eF7ACd39483C19F28DE86b7EF19DBCA\
+
 
