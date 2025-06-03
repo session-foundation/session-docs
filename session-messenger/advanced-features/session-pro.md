@@ -1,6 +1,10 @@
 # Session Pro
 
-Session Pro is a service offering advanced features to power users of Session. Planned features for Session Pro include, but are not limited to:
+Session Pro is a service offering advanced features to power users of Session. \
+\
+A beta version of Pro will be released first as an MVP. The initial feature set for Session Pro Beta is yet to be announced, but will be focused on additional convenience features for users, allowing them to better organize their messages on Session, exceed limits placed on free users and offer more opportunities to customize how they appear to other users in the app. \
+\
+Planned features for the full version of Session Pro include, but are not limited to:
 
 * Increased file transfer limits
 * Account Profiles
