@@ -52,6 +52,10 @@ If a node is not exited within 7 days after becoming eligible (22 days after the
 
 To keep the Session Network secure, there is a network-wide limit on how much SESH can be claimed as rewards from the Staking Portal within a 12 hour period. This provides additional security against potential exploits. Up to 1,000,000 SESH can be claimed with a 12 hour period. The 12 hour periods span 00:00 UTC to 12:00 UTC and 12:00 UTC to 00:00 UTC.
 
+When you load the Staking Portal, it will fetch the total amount of SESH already claimed in the current claim cycle. If your claimable amount is greater than the tokens remaining in the claim limit, you'll see a "claim limit reached" screen with a countdown timer showing when the limit resets.
+
+For example, if there are 1,000 SESH remaining in the current limit and you have 999 SESH claimable, you will be able to claim and the portal will show you the claim option. However, if you have 1,001 SESH claimable, you'll see the limit reached screen and will need to wait for the next 12-hour cycle to begin.
+
 ## Can I unlock my stake from a multicontributor node before it starts operating? <a href="#unlock-stake-before-registration" id="unlock-stake-before-registration"></a>
 
 Yes, under certain conditions. It is not possible to unlock your stake from a multicontributor node for 24 hours after you contribute your stake. If the node has not been registered and begun to operate before this 24 hour period, you can unlock your stake. If the node has been registered and is currently operating, you can unlock your stake according to certain conditions, depending on how much you are staking (see below).&#x20;
