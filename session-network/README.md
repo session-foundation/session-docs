@@ -12,7 +12,7 @@ The Session Network is a decentralized, open-source blockchain network that enab
 The Session Network is a decentralized physical infrastructure network with thousands of nodes and millions of users. Here are the key elements which enable the Session Network: \
 
 
-* Decentralized: The Session Network is a peer-to-peer network, it is not controlled by any single entity, but by a distributed network of 2,000+ Session Nodes in over 50 countries
+* Decentralized: The Session Network is a peer-to-peer network, it is not controlled by any single entity, but by a distributed network of 1,500+ Session Nodes in over 50 countries
 * Session Nodes: Nodes provide the basic infrastructure for a communication network: message sending, storage, and delivery
 * Validator software: Validator software enables core functionality of peers in the network, including basic requirements such as message storage and onion-routing protocol(s), as well as more complex logic such as network storage layers
 * Session Token: Session Token is the native cryptocurrency of the Session Network, used for staking, and paying for transactions and computational services, such as Session’s advanced features. Session Token will be issued on Ethereum, while the incentive layer (staking and rewards) is launching on Arbitrum One

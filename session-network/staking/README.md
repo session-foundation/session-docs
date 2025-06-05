@@ -1,6 +1,6 @@
 # Staking
 
-Staking allows users to earn rewards for securing the Session Network. It is simple and fast to begin staking and join Session’s network of over 2,000 nodes.
+Staking allows users to earn rewards for securing the Session Network. It is simple and fast to begin staking and join Session’s network of over 1,500 nodes.
 
 {% hint style="info" %}
 For Staking guides, check out the [Contribute to the Session Network page](../../contribute-to-the-session-network/)

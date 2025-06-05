@@ -245,6 +245,8 @@ systemctl status oxen-node
 
 You'll need your Ethereum wallet address to register your Session Node. Navigate to your Ethereum wallet and copy your wallet address.&#x20;
 
+> **Note:** If you have a SESH vesting contract, instead, copy this contract address, rather than your wallet address. This will be the operator address for your node.
+
 #### 6.2a: Individual Staking
 
 To run a Session Node as the sole contributor, you'll need:
@@ -264,7 +266,7 @@ To run a multicontributor Session Node as the operator, you'll need:
 Log in (if not already logged in) to the VPS running the Session Node, then run the following command:
 
 ```
-oxend register [your ETH address]
+oxend register [operator ETH address]
 ```
 
 The daemon will output something which looks similar to:
@@ -299,6 +301,8 @@ When you view the prepared node's details you can customise your stake amount an
 
 You node will be listed on the [Staking Portal](https://stake.getsession.org/) as an Available Node, and anyone can stake to it from there. Once your node has reached full 25,000 SESH stake amount, it will automatically be registered on the network.
 
+> **Note:** If you are operating a node and staking vesting SESH, note that you cannot set up a multicontributor node with SESH. Instead, you can set up a multicontributor node with non-vesting SESH and stake to it using your vesting SESH.&#x20;
+
 ### Step 7: Session Node status check
 
 After you've staked to your Session Node, you can check that Session Node is running, recognised, and eligible to earn SESH rewards on the [My Stakes](https://stake.getsession.org/mystakes) page. This process typically takes 9-12 minutes as the network securely witnesses and finalizes the registration on the chain.
@@ -331,7 +335,9 @@ sudo apt install session-service-node
 
 ### Monitoring
 
-Use the [My Stakes](https://stake.getsession.org/mystakes) page to monitor the status of your staked node.&#x20;
+Use the [My Stakes](https://stake.getsession.org/mystakes) page to monitor the status of your staked node. On this page you'll also see the rewards your node is earning, and claim these using the **Claim** button.&#x20;
+
+> **Note:** If you're staking vesting SESH, you'll need to **switch off** Vesting Mode first to be able to see your rewards.&#x20;
 
 ### Back-ups
 
