@@ -123,8 +123,8 @@ Alright, good to go. Our server is now set up, up to date, and is not running as
 
 If you are using a firewall then ensure that the following ports are open/reachable
 
-* Port 11022 (blockchain syncing)
-* Port 11025 (Session Node to Session Node)
+* Port 22022 (blockchain syncing)
+* Port 22025 (Session Node to Session Node)
 
 ### Step 3: Initial repository setup
 
