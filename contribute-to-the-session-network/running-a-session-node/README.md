@@ -245,7 +245,7 @@ systemctl status oxen-node
 
 #### 6.1: Retrieving your wallet address
 
-You'll need your Ethereum wallet address to register your Session Node. Navigate to your Ethereum wallet and copy your wallet address.&#x20;
+You'll need your Arbitrum wallet address to register your Session Node. Navigate to your Arbitrum wallet and copy your wallet address.&#x20;
 
 > **Note:** If you have a SESH vesting contract, instead, copy this contract address, rather than your wallet address. This will be the operator address for your node.
 
@@ -254,14 +254,14 @@ You'll need your Ethereum wallet address to register your Session Node. Navigate
 To run a Session Node as the sole contributor, you'll need:
 
 * A fully synchronized, up-to-date Oxen daemon running on your Session Node
-* An Ethereum wallet with at least 25,000 SESH in it (to meet the staking requirement to register your Session Node), and sufficient ETH on the Arbitrum network for gas.&#x20;
+* An Arbitrum wallet with at least 25,000 SESH in it (to meet the staking requirement to register your Session Node), and sufficient ETH on the Arbitrum network for gas.&#x20;
 
 #### 6.2b: Multicontributor Staking
 
 To run a multicontributor Session Node as the operator, you'll need:
 
 * A fully synchronized, up-to-date Oxen daemon running on your Session Node
-* An Ethereum wallet with at least 6,250 SESH in it (to meet the operator staking requirement to register your Session Node), and sufficient ETH on the Arbitrum One Network for gas.&#x20;
+* An Arbitrum wallet with at least 6,250 SESH in it (to meet the operator staking requirement to register your Session Node), and sufficient ETH on the Arbitrum One Network for gas.&#x20;
 
 #### 6.3: Preparing your node for registration
 
@@ -287,7 +287,7 @@ _NOTE: This information will be automatically submitted to the Staking Portal to
 
 #### 6.4a: Registering your single contributor Session Node
 
-To register and stake your Session Node, ensure your Etherem wallet has a balance of at least 25,000 SESH as well as sufficient ETH on the Arbitrum One network for gas.
+To register and stake your Session Node, ensure your Arbitrum wallet has a balance of at least 25,000 SESH as well as sufficient ETH on the Arbitrum One network for gas.
 
 Navigate to the [Staking Portal](https://stake.getsession.org/) and connect your wallet. The node you have prepared registration for will appear in the 'Your Prepared Registrations' list.\
 \
@@ -295,7 +295,7 @@ View the prepared node’s details and confirm your registration and stake of 25
 
 #### 6.4b: Registering your multicontributor Session Node
 
-To register and stake your Session Node, ensure your Ethereum wallet has a balance of at least 6,250 SESH as well as sufficient ETH on the Arbitrum One network for gas.
+To register and stake your Session Node, ensure your Arbitrum wallet has a balance of at least 6,250 SESH as well as sufficient ETH on the Arbitrum One network for gas.
 
 Navigate to the [Staking Portal](https://stake.getsession.org/) and connect your wallet. On the **Register** page, the node you have prepared registration for will appear in the 'Your Prepared Registrations' list.
 
