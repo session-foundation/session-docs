@@ -10,7 +10,7 @@ description: >-
 
 You can run Session Node software on any device running a supported operating system, but for the purposes of this guide, we'll assume you will be setting up a Session Node on a remote Ubuntu or Debian server. If you're new to Linux or running servers in general, this is the most straightforward approach. If you're more experienced and would prefer to run your Session Node on a different operating system, you'll need to modify the syntax of some commands to suit your system of choice.
 
-> **Note:** You'll need Session Tokens (SESH) on the **Arbitrum One network** to be able to stake. If you have purchased SESH on the Ethereum Network, you must bridge it to the Arbitrum One network via the [official Arbitrum bridge](https://stake.getsession.org/bridge/arbitrum) first. Please also make sure you have a small amount of ETH on the Arbitrum One network for gas.&#x20;
+> **Note:** You'll need Session Tokens (SESH) on the **Arbitrum One network** to be able to stake. If you have purchased SESH on the Ethereum network, you must bridge it to the Arbitrum One network via the [official Arbitrum bridge](https://stake.getsession.org/bridge/arbitrum) first. Please also make sure you have a small amount of ETH on the Arbitrum One network for gas.&#x20;
 
 #### **Requirements**
 

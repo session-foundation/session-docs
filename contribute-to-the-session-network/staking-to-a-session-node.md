@@ -8,7 +8,7 @@ Session Nodes can be run by a single contributor, or by multiple contributors wh
 
 If you wish instead to register a node, you can find out how to do that [here](running-a-session-node/).
 
-> **Note:** You'll need Session Tokens (SESH) on the **Arbitrum One network** to be able to stake. If you have purchased SESH on the Ethereum Network, you must bridge it to the Arbitrum One network via the [official Arbitrum bridge](https://stake.getsession.org/bridge/arbitrum) first. Please also make sure you have a small amount of ETH on the Arbitrum One network for gas.&#x20;
+> **Note:** You'll need Session Tokens (SESH) on the **Arbitrum One network** to be able to stake. If you have purchased SESH on the Ethereum network, you must bridge it to the Arbitrum One network via the [official Arbitrum bridge](https://stake.getsession.org/bridge/arbitrum) first. Please also make sure you have a small amount of ETH on the Arbitrum One network for gas.&#x20;
 
 #### Step 1:
 
