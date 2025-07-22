@@ -123,10 +123,13 @@ Alright, good to go. Our server is now set up, up to date, and is not running as
 
 #### 2.3: Firewall configuration
 
-If you are using a firewall then ensure that the following ports are open/reachable
+If you are using a firewall then you should ensure that the following ports are open and reachable:
 
-* Port 22022 (blockchain syncing)
-* Port 22025 (Session Node to Session Node)
+* 22020 (Storage Server to Storage Server, TCP & UDP)
+* 22021 (Session Client to Storage Server, TCP)
+* 22022 (Blockchain syncing, TCP)
+* 22025 (Session Node to Session Node, TCP)
+* 1090 (Lokinet router data, UDP)
 
 ### Step 3: Initial repository setup
 
@@ -340,6 +343,8 @@ sudo apt install session-service-node
 Use the [My Stakes](https://stake.getsession.org/mystakes) page to monitor the status of your staked node. On this page you'll also see the rewards your node is earning, and claim these using the **Claim** button.&#x20;
 
 > **Note:** If you're staking vesting SESH, you'll need to **switch off** Vesting Mode first to be able to see your rewards.&#x20;
+
+You can also verify that the Storage Server is reachable over UDP using [quictest.oxen.io](https://quictest.oxen.io/) once the Session Node is registered onto the network successfully as part of monitoring your node.
 
 ### Back-ups
 
