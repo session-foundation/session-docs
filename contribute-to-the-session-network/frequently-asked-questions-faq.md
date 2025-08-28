@@ -46,7 +46,7 @@ If you have enabled automatic activation during registration, your node will aut
 
 ## What happens when a node gets liquidated? <a href="#liquidation-penalty" id="liquidation-penalty"></a>
 
-If a node is not exited within 7 days after becoming eligible (22 days after the initial exit request), the node becomes eligible for liquidation by other users. When a node gets liquidated, a 0.2% penalty is taken from the operator's stake: 0.1% of the operator’s stake is transferred to the liquidator, and 0.1% of the operator’s stake is returned to the Staking Reward Pool.
+If a node is not exited within 7 days after becoming eligible (22 days after the initial exit request), the node becomes eligible for liquidation by other users. When a node gets liquidated, a 0.2% penalty is taken from the operator's stake: 0.03% of the operator’s stake is transferred to the liquidator, and 0.17% of the operator’s stake is returned to the Staking Reward Pool.
 
 ## What is the network-wide claims limit? <a href="#network-claims-limit" id="network-claims-limit"></a>
 

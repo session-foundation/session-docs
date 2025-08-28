@@ -432,7 +432,7 @@ Your stagenet Session Node will become eligible to exit 1 day after the initial 
 
 When a stagenet Session Node has become eligible to exit (after 1 day has elapsed after an exit request), the node must formally exit the network within 2 hours of becoming eligible (or within 15 days after becoming eligible to exit on mainnet). Simply click the Exit button on the node in the Staking Portal. After exiting, you can claim your stake by clicking the Claim button on your My Stakes page.
 
-If the node is not removed within 2 hours becoming eligible to exit (or 7 days after becoming eligible on mainnet, 22 days after the initial exit request), the node becomes eligible for liquidation by other users. When a node gets liquidated, a 0.2% penalty is taken from the operator's stake: 0.1% of the operator’s stake is transferred to the liquidator, and 0.1% of the operator’s stake is returned to the Staking Reward Pool.\
+If the node is not removed within 2 hours becoming eligible to exit (or 7 days after becoming eligible on mainnet, 22 days after the initial exit request), the node becomes eligible for liquidation by other users. When a node gets liquidated, a 0.2% penalty is taken from the operator's stake: 0.03% of the operator’s stake is transferred to the liquidator, and 0.17% of the operator’s stake is returned to the Staking Reward Pool.\
 
 
 ### Deregistrations

@@ -443,7 +443,7 @@ Your Session Node will become eligible to exit 15 days after the initial request
 
 When a Session Node has become eligible to exit after 15 days, the node must formally exit the network within 7 days of becoming eligible to exit. Simply click the Exit button on the node in the Staking Portal. After exiting, you can claim your stake by clicking the Claim button on your My Stakes page.
 
-If the node is not removed within 7 days becoming eligible to exit (22 days after the initial exit request), the node becomes eligible for liquidation by other users. When a node gets liquidated, a 0.2% penalty is taken from the operator's stake: 0.1% of the operator’s stake is transferred to the liquidator, and 0.1% of the operator’s stake is returned to the Staking Reward Pool.\
+If the node is not removed within 7 days becoming eligible to exit (22 days after the initial exit request), the node becomes eligible for liquidation by other users. When a node gets liquidated, a 0.2% penalty is taken from the operator's stake: 0.03% of the operator’s stake is transferred to the liquidator, and 0.17% of the operator’s stake is returned to the Staking Reward Pool.\
 
 
 ### Deregistrations
