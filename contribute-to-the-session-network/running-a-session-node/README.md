@@ -16,9 +16,12 @@ You can run Session Node software on any device running a supported operating sy
 
 These are the current basic requirements for running a Session Node.
 
-<table><thead><tr><th width="242">Spec</th><th>Requirement</th></tr></thead><tbody><tr><td>Latest Session Node software</td><td>Latest Session Node <code>.deb</code> packages (installed via the steps below) or latest <code>stable</code> branch build from source.</td></tr><tr><td>Server operating system</td><td>Ubuntu 22.04+ (latest LTS recommended) or Debian 11+ (latest stable recommended)</td></tr><tr><td>Storage</td><td>45GB</td></tr><tr><td>RAM</td><td>4-8GB</td></tr><tr><td>Connectivity</td><td>100Mb or faster</td></tr><tr><td>Traffic</td><td>1 TB per month or more</td></tr><tr><td>Power</td><td>Redundant with remote cycling ability, as found in most data centres</td></tr></tbody></table>
+<table><thead><tr><th width="242">Spec</th><th>Requirement</th></tr></thead><tbody><tr><td>Latest Session Node software</td><td>Latest Session Node <code>.deb</code> packages (installed via the steps below) or latest <code>stable</code> branch build from source.</td></tr><tr><td>Server operating system*</td><td>Ubuntu 22.04+ (latest LTS recommended) or Debian 11+ (latest stable recommended)</td></tr><tr><td>Storage</td><td>45GB</td></tr><tr><td>RAM</td><td>4-8GB</td></tr><tr><td>Connectivity</td><td>100Mb or faster</td></tr><tr><td>Traffic** </td><td>1 TB per month or more</td></tr><tr><td>Power</td><td>Redundant with remote cycling ability, as found in most data centres</td></tr></tbody></table>
 
-> **Note:** It is possible for an experienced system administrator to run a Service Node on a server running an operating system other than Ubuntu or Debian. However, this requires additional work to start up and manage the required services, and is beyond the scope of this guide.
+> **Note:** \
+> \*It is possible for an experienced system administrator to run a Service Node on a server running an operating system other than Ubuntu or Debian. However, this requires additional work to start up and manage the required services, and is beyond the scope of this guide.\
+> \
+> \*\* While the traffic requirement is 1 TB per month, actual traffic may occasionally exceed this amount. Most VPS providers offer generous or unlimited bandwidth allowances, with any throttling only occurring after a certain level of usage. Even if throttling occurs, it typically doesn't impact node performance. Additionally, many providers only count outgoing traffic toward limits, meaning incoming traffic often isn't counted against your monthly allowance.
 
 #### Session Nodes in a nutshell
 
