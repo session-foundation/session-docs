@@ -2,20 +2,6 @@
 icon: message-dots
 cover: .gitbook/assets/1500x500.jpg
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Session Messenger
@@ -37,6 +23,7 @@ In addition to providing privacy and security, Session is also designed to be a 
 * Support for end-to-end encrypted file attachments, including videos, pdfs, and voice recordings
 * Truly decentralized offline message delivery using swarms in the Session Network
 * Self-managed keys (generated and stored on-device only), eliminating the trust-on-first-use dilemma
+* IN DEV: [Session Protocol V2](https://getsession.org/blog/session-protocol-v2), adding support for post-quantum cryptography, re-implementing Perfect Forward Secrecy (PFS), and more secure multi-device account management
 
 Session is the result of years of open-source development and the dedication of a diverse community of contributors and node operators.
 
