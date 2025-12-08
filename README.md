@@ -19,11 +19,11 @@ In addition to providing privacy and security, Session is also designed to be a 
 * User configurable privacy settings, such as disappearing messages and read receipts;
 * User-first, joy-sparking features, such as emoji reactions
 * P2P voice and video call
-  * **SOON**: onion-routed voice and video calls using the novel Lokinet protocol
+  * **SOON:** onion-routed voice and video calls using the novel Lokinet protocol
 * Support for end-to-end encrypted file attachments, including videos, pdfs, and voice recordings
 * Truly decentralized offline message delivery using swarms in the Session Network
 * Self-managed keys (generated and stored on-device only), eliminating the trust-on-first-use dilemma
-* IN DEV: [Session Protocol V2](https://getsession.org/blog/session-protocol-v2), adding support for post-quantum cryptography, re-implementing Perfect Forward Secrecy (PFS), and more secure multi-device account management
+* **IN DEV:** [Session Protocol V2](https://getsession.org/blog/session-protocol-v2), adding support for post-quantum cryptography, re-implementing Perfect Forward Secrecy (PFS), and more secure multi-device account management
 
 Session is the result of years of open-source development and the dedication of a diverse community of contributors and node operators.
 
