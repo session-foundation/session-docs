@@ -164,12 +164,13 @@ echo "deb https://deb.oxen.io <DISTRO> main" | sudo tee /etc/apt/sources.list.d/
 
 Other supported distributions include:
 
+* trixie (Debian 13)
 * bookworm (Debian 12)
 * bullseye (Debian 11)
 * noble (Ubuntu 24.04)
 * jammy (Ubuntu 22.04)
 
-There are also repositories for Debian testing (`trixie` or `testing`) and unstable (`sid` or `unstable`), and the latest or upcoming Ubuntu non-LTS release is typically supported. Note, however, that none of these distribution versions are recommended for production Session Nodes.
+There are also repositories for Debian testing (`forky` or `testing`) and unstable (`sid` or `unstable`), and the latest or upcoming Ubuntu non-LTS release is typically supported. Note, however, that none of these distribution versions are recommended for production Session Nodes.
 
 Then resync your package repositories with:
 
