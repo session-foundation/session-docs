@@ -133,6 +133,7 @@ If you are using a firewall then you should ensure that the following ports are 
 * 22022 (Blockchain syncing, TCP)
 * 22025 (Session Node to Session Node, TCP)
 * 1090 (Lokinet router data, UDP)
+* 1190 (Session Router data, UDP)
 
 ### Step 3: Initial repository setup
 
