@@ -10,18 +10,18 @@ description: >-
 
 You can run Session Node software on any device running a supported operating system, but for the purposes of this guide, we'll assume you will be setting up a Session Node on a remote Ubuntu or Debian server. If you're new to Linux or running servers in general, this is the most straightforward approach. If you're more experienced and would prefer to run your Session Node on a different operating system, you'll need to modify the syntax of some commands to suit your system of choice.
 
-> **Note:** You'll need Session Tokens (SESH) on the **Arbitrum One network** to be able to stake. If you have purchased SESH on the Ethereum network, you must bridge it to the Arbitrum One network via the [official Arbitrum bridge](https://stake.getsession.org/bridge/arbitrum) first. Please also make sure you have a small amount of ETH on the Arbitrum One network for gas.&#x20;
+> **Note:** You'll need Session Tokens (SESH) on the **Arbitrum One network** to be able to stake. If you have purchased SESH on the Ethereum network, you must bridge it to the Arbitrum One network via the [official Arbitrum bridge](https://stake.getsession.org/bridge/arbitrum) first. Please also make sure you have a small amount of ETH on the Arbitrum One network for gas.
 
 #### **Requirements**
 
 These are the current basic requirements for running a Session Node.
 
-<table><thead><tr><th width="242">Spec</th><th>Requirement</th></tr></thead><tbody><tr><td>Latest Session Node software</td><td>Latest Session Node <code>.deb</code> packages (installed via the steps below) or latest <code>stable</code> branch build from source.</td></tr><tr><td>Server operating system*</td><td>Ubuntu 22.04+ (latest LTS recommended) or Debian 11+ (latest stable recommended)</td></tr><tr><td>Storage</td><td>45GB</td></tr><tr><td>RAM</td><td>4-8GB</td></tr><tr><td>Connectivity</td><td>100Mb or faster</td></tr><tr><td>Traffic** </td><td>1 TB per month or more</td></tr><tr><td>Power</td><td>Redundant with remote cycling ability, as found in most data centres</td></tr></tbody></table>
+<table><thead><tr><th width="242">Spec</th><th>Requirement</th></tr></thead><tbody><tr><td>Latest Session Node software</td><td>Latest Session Node <code>.deb</code> packages (installed via the steps below) or latest <code>stable</code> branch build from source.</td></tr><tr><td>Server operating system*</td><td>Ubuntu 22.04+ (latest LTS recommended) or Debian 11+ (latest stable recommended)</td></tr><tr><td>Storage</td><td>45GB</td></tr><tr><td>RAM</td><td>4 - 8GB</td></tr><tr><td>Connectivity/Bandwidth</td><td>100Mb or faster</td></tr><tr><td>Traffic/Transfer**</td><td>10 - 20 TB per month or more</td></tr><tr><td>Power</td><td>Redundant with remote cycling ability, as found in most data centres</td></tr></tbody></table>
 
-> **Note:** \
+> **Note:**\
 > \*It is possible for an experienced system administrator to run a Service Node on a server running an operating system other than Ubuntu or Debian. However, this requires additional work to start up and manage the required services, and is beyond the scope of this guide.\
 > \
-> \*\* While the traffic requirement is 1 TB per month, actual traffic may occasionally exceed this amount. Most VPS providers offer generous or unlimited bandwidth allowances, with any throttling only occurring after a certain level of usage. Even if throttling occurs, it typically doesn't impact node performance. Additionally, many providers only count outgoing traffic toward limits, meaning incoming traffic often isn't counted against your monthly allowance.
+> \*\* While the traffic requirement is 10 TB per month, actual traffic may occasionally exceed this amount. Most VPS providers offer generous or unlimited bandwidth allowances, with any throttling only occurring after a certain level of usage. Even if throttling occurs, it typically doesn't impact node performance. Additionally, many providers only count outgoing traffic toward limits, meaning incoming traffic often isn't counted against your monthly allowance.
 
 #### Session Nodes in a nutshell
 
@@ -53,19 +53,16 @@ If your server goes down while staked, your Session Node could be [deregistered 
 
 The simplest and cheapest way to host a server such as a Session Node is to lease a Virtual Private Server (VPS). There are literally hundreds of options when it comes to VPS providers, but some of the more commonly chosen companies and products are listed below.
 
-| Hosting Provider | Product Name      | Cost Per Month ($USD) |
-| ---------------- | ----------------- | --------------------- |
-| Netcup           | VPS 1000 G8       | 10.50                 |
-| Evolution Host   | STARTER           | 5.50                  |
-| Online.net       | Start-2-S-SSD     | 13.99                 |
-| Scaleway         | START1-M          | 9.33                  |
-| OVH              | VPS SSD 2         | 7.61                  |
-| Leaseweb         | Virtual Server XL | 34.45                 |
-| Digital Ocean    | 4 GB, 2 vCPUs     | 24                    |
-| Linode           | 4 GB, 2 vCPUs     | 20                    |
-| Feral Hosting    | Neon Capability   | 19.68                 |
-| Trabia           | VDS-8G            | 38.54                 |
-| Hetzner          | EX41-SSD (30 TB)  | 39.71                 |
+| Hosting Provider   | Product Name      | Cost Per Month ($USD) |
+| ------------------ | ----------------- | --------------------- |
+| Netcup             | VPS 500 G11s      | 4.65                  |
+| Evolution Host     | BUSINESS          | 46.50                 |
+| Scaleway (Dedibox) | Start-2-S-SSD     | 5.80                  |
+| Scaleway           | DEV1-M (+Storage) | 22.60                 |
+| OVH                | VPS-1             | 4.20                  |
+| Feral Hosting      | Neon Capability   | 17.50                 |
+| Trabia             | VDS-4G            | 19.80                 |
+| Hetzner            | CX33              | 6.60                  |
 
 > **Note:** Session does not endorse any of these providers. This list is merely a selection of some of the popular options at the time of writing. Of course, this popularity comes at the expense of decentralisation. A useful resource in choosing a less common VPS provider is [ExoticVM](https://www.exoticvm.com/). Another good one is [Server Hunter](https://www.serverhunter.com/).
 
@@ -75,7 +72,7 @@ The better ones will utilise [KVM](https://www.linux-kvm.org/page/Main_Page) [vi
 
 A good VPS provider will also allow you to monitor your machine's resource consumption, seamlessly upgrade to a more powerful server at a later date, remotely reboot the host if it becomes unresponsive, and even recover or rebuild the system using out-of-band access if, for example, a bad configuration change results in lost network access.
 
-When selecting your VPS’ operating system, please choose the latest Ubuntu LTS release or latest Debian stable release (currently 24.04 and 12, respectively) if you want to be able to follow the steps below verbatim.&#x20;
+When selecting your VPS’ operating system, please choose the latest Ubuntu LTS release or latest Debian stable release (currently 24.04 and 12, respectively) if you want to be able to follow the steps below verbatim.
 
 ### Step 2: Preparing your server
 
@@ -147,7 +144,7 @@ This first command installs the public key used to sign the Session Node package
 sudo curl -so /etc/apt/trusted.gpg.d/oxen.gpg https://deb.oxen.io/pub.gpg
 ```
 
-The second command tells `apt` where to find the packages.&#x20;
+The second command tells `apt` where to find the packages.
 
 {% code overflow="wrap" %}
 ```
@@ -181,11 +178,11 @@ sudo apt update
 
 ### Step 4: Getting an Arbitrum One RPC provider account
 
-You will need to set up an Arbitrum One RPC provider for your `oxend` to interact with the Arbitrum network. This setup will allow your Session Node to communicate with the Arbitrum One blockchain and to witness and facilitate transactions.&#x20;
+You will need to set up an Arbitrum One RPC provider for your `oxend` to interact with the Arbitrum network. This setup will allow your Session Node to communicate with the Arbitrum One blockchain and to witness and facilitate transactions.
 
-You can use public RPC providers like Infura and Alchemy or set up your own Arbitrum full node and connect to that node locally.&#x20;
+You can use public RPC providers like Infura and Alchemy or set up your own Arbitrum full node and connect to that node locally.
 
-While Arbitrum has several RPC providers available, getting familiar with these providers will be useful for mainnet where a reliable RPC connection is required for the stability of your node.&#x20;
+While Arbitrum has several RPC providers available, getting familiar with these providers will be useful for mainnet where a reliable RPC connection is required for the stability of your node.
 
 * Arbitrum’s recommendations can be found [here](https://docs.arbitrum.io/build-decentralized-apps/reference/node-providers#arbitrum-public-rpc-endpoints)
 * [Infura](https://www.infura.io/): Learn how to get setup with a Arbitrum One node through Infura [here](https://docs.infura.io/api/getting-started).
@@ -199,15 +196,15 @@ For example, if you were using Alchemy as an RPC provider your URL would look so
 https://arb-mainnet.g.alchemy.com/v2/32bfi3gb298fbb32byfb32bf
 ```
 
-If you were using [dRPC](https://drpc.org/chainlist/arbitrum) as your provider, your URL would look something like this:&#x20;
+If you were using [dRPC](https://drpc.org/chainlist/arbitrum) as your provider, your URL would look something like this:
 
 ```
 https://lb.drpc.org/ogrpc?network=arbitrum&dkey=32bfi3gb298fbb3-2byfb32bf
 ```
 
-_Note: The RPC URLs  here use mock API keys_
+_Note: The RPC URLs here use mock API keys_
 
-Find your RPC URL and copy it for use in the next step.&#x20;
+Find your RPC URL and copy it for use in the next step.
 
 ### Step 5: Session Node installation and operation
 
@@ -253,7 +250,7 @@ systemctl status oxen-node
 
 #### 6.1: Retrieving your wallet address
 
-You'll need your Arbitrum wallet address to register your Session Node. Navigate to your Arbitrum wallet and copy your wallet address.&#x20;
+You'll need your Arbitrum wallet address to register your Session Node. Navigate to your Arbitrum wallet and copy your wallet address.
 
 > **Note:** If you have a SESH vesting contract, instead, copy this contract address, rather than your wallet address. This will be the operator address for your node.
 
@@ -262,14 +259,14 @@ You'll need your Arbitrum wallet address to register your Session Node. Navigate
 To run a Session Node as the sole contributor, you'll need:
 
 * A fully synchronized, up-to-date Oxen daemon running on your Session Node
-* An Arbitrum wallet with at least 25,000 SESH in it (to meet the staking requirement to register your Session Node), and sufficient ETH on the Arbitrum network for gas.&#x20;
+* An Arbitrum wallet with at least 25,000 SESH in it (to meet the staking requirement to register your Session Node), and sufficient ETH on the Arbitrum network for gas.
 
 #### 6.2b: Multicontributor Staking
 
 To run a multicontributor Session Node as the operator, you'll need:
 
 * A fully synchronized, up-to-date Oxen daemon running on your Session Node
-* An Arbitrum wallet with at least 6,250 SESH in it (to meet the operator staking requirement to register your Session Node), and sufficient ETH on the Arbitrum One Network for gas.&#x20;
+* An Arbitrum wallet with at least 6,250 SESH in it (to meet the operator staking requirement to register your Session Node), and sufficient ETH on the Arbitrum One Network for gas.
 
 #### 6.3: Preparing your node for registration
 
@@ -311,7 +308,7 @@ When you view the prepared node's details you can customise your stake amount an
 
 You node will be listed on the [Staking Portal](https://stake.getsession.org/) as an Available Node, and anyone can stake to it from there. Once your node has reached full 25,000 SESH stake amount, it will automatically be registered on the network.
 
-> **Note:** If you are operating a node and staking vesting SESH, note that you cannot set up a multicontributor node with SESH. Instead, you can set up a multicontributor node with non-vesting SESH and stake to it using your vesting SESH.&#x20;
+> **Note:** If you are operating a node and staking vesting SESH, note that you cannot set up a multicontributor node with SESH. Instead, you can set up a multicontributor node with non-vesting SESH and stake to it using your vesting SESH.
 
 ### Step 7: Session Node status check
 
@@ -335,7 +332,7 @@ sudo apt upgrade
 
 _Note that this will install both updated_ `oxend` _packages and any available system updates (this is generally a good thing!)_
 
-During the upgrade, all instances of `oxend` will be restarted if they are currently running in order to switch to the updated `oxend`.&#x20;
+During the upgrade, all instances of `oxend` will be restarted if they are currently running in order to switch to the updated `oxend`.
 
 If for some reason you want to install only Oxen package upgrades but not other system package updates, then instead of the `sudo apt upgrade` you can use:
 
@@ -345,9 +342,9 @@ sudo apt install session-service-node
 
 ### Monitoring
 
-Use the [My Stakes](https://stake.getsession.org/mystakes) page to monitor the status of your staked node. On this page you'll also see the rewards your node is earning, and claim these using the **Claim** button.&#x20;
+Use the [My Stakes](https://stake.getsession.org/mystakes) page to monitor the status of your staked node. On this page you'll also see the rewards your node is earning, and claim these using the **Claim** button.
 
-> **Note:** If you're staking vesting SESH, you'll need to **switch off** Vesting Mode first to be able to see your rewards.&#x20;
+> **Note:** If you're staking vesting SESH, you'll need to **switch off** Vesting Mode first to be able to see your rewards.
 
 You can also verify that the Storage Server is reachable over UDP using [quictest.oxen.io](https://quictest.oxen.io/) once the Session Node is registered onto the network successfully as part of monitoring your node.
 
@@ -381,25 +378,25 @@ The command to restore an ed25519 key into a file is:
 oxen-sn-keys restore /var/lib/oxen/key_ed25519
 ```
 
-The command to restore BLS key into a file is:&#x20;
+The command to restore BLS key into a file is:
 
 ```
 oxen-sn-keys restore-bls /var/lib/oxen/key_bls
 ```
 
-Those commands will create a new key file with the correct formatting called “key\_ed25519” and “key\_bls” respectively, if you want to overwrite an existing key file you can pass  the “-- overwrite” flag as such:&#x20;
+Those commands will create a new key file with the correct formatting called “key\_ed25519” and “key\_bls” respectively, if you want to overwrite an existing key file you can pass the “-- overwrite” flag as such:
 
 ```
 oxen-sn-keys restore --overwrite /var/lib/oxen/key_ed25519
 ```
 
-For BLS keys:&#x20;
+For BLS keys:
 
 ```
 oxen-sn-keys restore-bls --overwrite /var/lib/oxen/key_bls
 ```
 
-You can choose either to overwrite your existing key files in the /var/lib/oxen directory using this command or create new key files and swap them out with the existing files, once keys are overwritten or swapped your node can be restarted with the following command:&#x20;
+You can choose either to overwrite your existing key files in the /var/lib/oxen directory using this command or create new key files and swap them out with the existing files, once keys are overwritten or swapped your node can be restarted with the following command:
 
 ```
 systemctl restart oxen-node
@@ -409,9 +406,9 @@ systemctl restart oxen-node
 
 ### Updating L2 Providers and additional node configuration
 
-You can reconfigure your Session by modifying the file at `/etc/oxen/oxen.conf` where settings are kept for the current running instance.&#x20;
+You can reconfigure your Session by modifying the file at `/etc/oxen/oxen.conf` where settings are kept for the current running instance.
 
-In `/etc/oxen/oxen.conf` each line denotes a configurable option. \
+In `/etc/oxen/oxen.conf` each line denotes a configurable option.\
 \
 For example, in the following, the Session node is configured to use `http://example.com` as the primary L2 provider and `http://backup.example.com` as a backup if the first provider falls behind.
 
@@ -448,8 +445,7 @@ Your Session Node will become eligible to exit 15 days after the initial request
 
 When a Session Node has become eligible to exit after 15 days, the node must formally exit the network within 7 days of becoming eligible to exit. Simply click the Exit button on the node in the Staking Portal. After exiting, you can claim your stake by clicking the Claim button on your My Stakes page.
 
-If the node is not removed within 7 days becoming eligible to exit (22 days after the initial exit request), the node becomes eligible for liquidation by other users. When a node gets liquidated, a 0.2% penalty is taken from the operator's stake: 0.03% of the operator’s stake is transferred to the liquidator, and 0.17% of the operator’s stake is returned to the Staking Reward Pool.\
-
+If the node is not removed within 7 days becoming eligible to exit (22 days after the initial exit request), the node becomes eligible for liquidation by other users. When a node gets liquidated, a 0.2% penalty is taken from the operator's stake: 0.03% of the operator’s stake is transferred to the liquidator, and 0.17% of the operator’s stake is returned to the Staking Reward Pool.\\
 
 ### Deregistrations
 
@@ -465,4 +461,4 @@ To avoid losing 0.2% of their stake to the liquidation penalty, operators can ma
 
 Well done! Your Session Node is configured, operational, and will now begin receiving SESH rewards.
 
-Having trouble? Head to the [Session Token Discord](https://discord.gg/sessiontoken) to access support.&#x20;
+Having trouble? Head to the [Session Token Discord](https://discord.gg/sessiontoken) to access support.
