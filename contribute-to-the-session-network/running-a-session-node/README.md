@@ -138,29 +138,29 @@ You only need to do this step the first time you want to set up the Oxen reposit
 
 To add the `apt` repository, run the following commands.
 
-This first command installs the public key used to sign the Session Node packages:
+This first command downloads the public key used to sign the Session Node packages:
 
 ```
-sudo curl -so /etc/apt/trusted.gpg.d/oxen.gpg https://deb.oxen.io/pub.gpg
+sudo curl -so /usr/share/keyrings/session-foundation.gpg https://deb.session.foundation/pub.gpg
 ```
 
 The second command tells `apt` where to find the packages.
 
 {% code overflow="wrap" %}
 ```
-echo "deb https://deb.oxen.io $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/oxen.list
+cat <<EOF | sudo tee /etc/apt/sources.list.d/session.sources
+Types: deb
+URIs: https://deb.session.foundation
+Suites: $(lsb_release -sc)
+Components: main
+Signed-By: /usr/share/keyrings/session-foundation.gpg
+EOF
 ```
 {% endcode %}
 
-If your distribution does not have `lsb_release` available, you may substitute `<DISTRO>` in the following command with the appropriate value to match your operating system. If your VPS is running Ubuntu 24.04 as recommended in this guide, replace `<DISTRO>` with `noble`.
+If your distribution does not have `lsb_release` available, you may substitute `$(lsb_release -sc)` in the above command with the appropriate value to match your operating system. If your VPS is running Ubuntu 24.04 as recommended in this guide, replace `$(lsb_release -sc)` with `noble`.
 
-{% code overflow="wrap" %}
-```
-echo "deb https://deb.oxen.io <DISTRO> main" | sudo tee /etc/apt/sources.list.d/oxen.list
-```
-{% endcode %}
-
-Other supported distributions include:
+Supported distributions include:
 
 * trixie (Debian 13)
 * bookworm (Debian 12)
@@ -170,7 +170,7 @@ Other supported distributions include:
 
 There are also repositories for Debian testing (`forky` or `testing`) and unstable (`sid` or `unstable`), and the latest or upcoming Ubuntu non-LTS release is typically supported. Note, however, that none of these distribution versions are recommended for production Session Nodes.
 
-Then resync your package repositories with:
+After adding the sources file resync your package repositories with:
 
 ```
 sudo apt update
