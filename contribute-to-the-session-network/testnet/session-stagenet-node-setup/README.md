@@ -249,7 +249,7 @@ To run a stagenet Session Node as the sole contributor, you'll need:
 * A fully synchronized, up-to-date Oxen daemon running on your stagenet Session Node
 * An Ethereum wallet with at least 20,000 test SESH in it (to meet the staking requirement to register your stagenet Session Node), and sufficient test ETH on the Arbitrum Sepolia network for gas.&#x20;
 
-If you don't have test SESH, join the [Session Token Discord](https://discord.gg/sessiontoken) to request some via the [referral program](https://token.getsession.org/blog/testnet-referrals).
+If you don't have test SESH, join the [Session Token Discord](https://getsession.org/discord) to request some via the [referral program](https://token.getsession.org/blog/testnet-referrals).
 
 #### 6.2b: Multicontributor Staking
 

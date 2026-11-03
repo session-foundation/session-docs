@@ -461,4 +461,4 @@ To avoid losing 0.2% of their stake to the liquidation penalty, operators can ma
 
 Well done! Your Session Node is configured, operational, and will now begin receiving SESH rewards.
 
-Having trouble? Head to the [Session Token Discord](https://discord.gg/sessiontoken) to access support.
+Having trouble? Head to the [Session Token Discord](https://getsession.org/discord) to access support.

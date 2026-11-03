@@ -8,7 +8,7 @@ Session Token is now available via Uniswap on [Ethereum](https://app.uniswap.org
 
 Further announcements will be made via trusted channels.
 
-<table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><a href="https://discord.gg/sessiontoken">Session Token Discord</a></td></tr><tr><td><a href="https://twitter.com/session_token">Session Token Twitter</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><a href="https://getsession.org/discord">Session Token Discord</a></td></tr><tr><td><a href="https://twitter.com/session_token">Session Token Twitter</a></td></tr></tbody></table>
 
 ### Rewards Programs
 
